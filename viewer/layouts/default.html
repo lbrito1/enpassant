@@ -37,7 +37,7 @@
         <h2>Categorias</h2>
         <ul class="filters">
           <% categories.each.with_index do |category, i| %>
-            <a class="category-links" href="<%= I18n.transliterate(category) %>"><%= category %></a>
+            <a class="category-links" href="category/<%= I18n.transliterate(category) %>"><%= category %></a>
             <% if i < categories.count - 1 %> <br> <% end %>
           <% end.join("<br>") %>
         </ul>

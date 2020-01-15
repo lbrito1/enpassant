@@ -6,11 +6,16 @@ compile '/index.html' do
   write '/index.html'
 end
 
-compile '/**/*.html' do
+compile '/category.html' do
+  filter :erb
   layout '/default.*'
-  write item.identifier.without_ext + '/index.html'
+  write item.identifier.without_ext + '.html'
 end
 
+compile '/**/*.html' do
+  layout '/default.*'
+  write item.identifier.without_ext + '.html'
+end
 # This is an example rule that matches Markdown (.md) files, and filters them
 # using the :kramdown filter. It is commented out by default, because kramdown
 # is not bundled with Nanoc or Ruby.

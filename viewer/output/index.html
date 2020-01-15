@@ -52,40 +52,40 @@
         <h2>Categorias</h2>
         <ul class="filters">
           
-            <a class="category-links" href="livro">livro</a>
+            <a class="category-links" href="category/livro">livro</a>
              <br> 
           
-            <a class="category-links" href="filme">filme</a>
+            <a class="category-links" href="category/filme">filme</a>
              <br> 
           
-            <a class="category-links" href="filmografia">filmografia</a>
+            <a class="category-links" href="category/filmografia">filmografia</a>
              <br> 
           
-            <a class="category-links" href="documentario">documentário</a>
+            <a class="category-links" href="category/documentario">documentário</a>
              <br> 
           
-            <a class="category-links" href="serie">série</a>
+            <a class="category-links" href="category/serie">série</a>
              <br> 
           
-            <a class="category-links" href="musica">música</a>
+            <a class="category-links" href="category/musica">música</a>
              <br> 
           
-            <a class="category-links" href="playlist">playlist</a>
+            <a class="category-links" href="category/playlist">playlist</a>
              <br> 
           
-            <a class="category-links" href="site">site</a>
+            <a class="category-links" href="category/site">site</a>
              <br> 
           
-            <a class="category-links" href="texto">texto</a>
+            <a class="category-links" href="category/texto">texto</a>
              <br> 
           
-            <a class="category-links" href="coluna">coluna</a>
+            <a class="category-links" href="category/coluna">coluna</a>
              <br> 
           
-            <a class="category-links" href="entrevista">entrevista</a>
+            <a class="category-links" href="category/entrevista">entrevista</a>
              <br> 
           
-            <a class="category-links" href="materia">matéria</a>
+            <a class="category-links" href="category/materia">matéria</a>
             
           
         </ul>
@@ -3230,15 +3230,6 @@ Giro de Noticias #2 – 01:52:42 Peões da Semana – 02:04:30 Setimo Selo – 0
   }
 
   function showYear(year) {
-    hideAllYearPosts()
-
-    div = document.querySelector('div.year-posts#year-posts-' + year.toString())
-    div.classList.remove("hidden")
-    div = document.querySelector('a.year-links#year-links-' + year.toString())
-    div.classList.add("disabled")
-  }
-
-  function showCategory(category) {
     hideAllYearPosts()
 
     div = document.querySelector('div.year-posts#year-posts-' + year.toString())
