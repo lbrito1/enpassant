@@ -4,7 +4,7 @@ require 'open-uri'
 require 'byebug'
 require 'awesome_print'
 
-require './lib/logger'
+require './compiler/lib/logger'
 
 class Fetcher
   include Logger

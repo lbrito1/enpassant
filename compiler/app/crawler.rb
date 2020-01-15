@@ -1,13 +1,13 @@
 require 'json'
 require 'byebug'
 
-require './app/fetcher'
-require './lib/logger'
+require './compiler/app/fetcher'
+require './compiler/lib/logger'
 
 class Crawler
   include Logger
 
-  CACHE_PATH = '../cache.json'
+  CACHE_PATH = 'cache.json'
 
   def call
     start_year_month = cache['last_updated_year_month'].split('-') || year_months.first
