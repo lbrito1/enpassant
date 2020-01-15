@@ -1,15 +1,17 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    awesome_print (1.8.0)
     byebug (11.0.1)
     mini_portile2 (2.4.0)
-    nokogiri (1.10.3)
+    nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
   byebug
   nokogiri
 
