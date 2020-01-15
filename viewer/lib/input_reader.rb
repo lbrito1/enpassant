@@ -1,9 +1,12 @@
 require 'json'
+require 'byebug'
+require 'awesome_print'
 
 def posts
   @posts ||= begin
     file = File.read('../cache.json')
     posts = JSON.parse(file)['data'] || []
+    # @posts_by_category = Hash.new { |h, k| h[k] = [] }
 
     posts.each do |_year, posts_by_year|
       posts_by_year.each do |month, posts_by_month|
@@ -16,8 +19,32 @@ def posts
   end
 end
 
-def years_ordered
+def posts_by_year
   posts.keys.sort.reverse
+end
+
+def recommendations_by_category
+  @recommendations_by_category ||= recommendations.group_by(&:category)
+end
+
+def recommendations
+  @recommendations ||= begin
+    list = []
+    posts.each do |_year, posts_by_year|
+      posts_by_year.each do |month, posts_by_month|
+        posts_by_month.each do |post|
+          post['recommendations'].each do |rec|
+            list << Recommendation.new(
+              text: rec["text"],
+              url: rec["url"],
+              post_url: post["url"])
+          end
+        end
+      end
+    end
+
+    list
+  end
 end
 
 def month_label(month_integer)

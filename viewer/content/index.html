@@ -2,9 +2,16 @@
 title: En Passant
 ---
 
+<% require 'byebug'%>
+<% recommendations%>
 
+<% recommendations_by_category.each do |category, recommendations| %>
 
-<% years_ordered.each do |year| %>
+  <h1><%= category %></h1>
+  <%= recommendations.map { |rec| rec.text }  %>
+<% end %>
+
+<% posts_by_year.each do |year| %>
   <% posts_in_year = posts[year] %>
   <div class="year-posts" id="year-posts-<%= year %>">
     <h2 class="year" id="<%= year%>"><%= year %></h2>
