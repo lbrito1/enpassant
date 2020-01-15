@@ -11,23 +11,23 @@
     <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
   </head>
   <body>
-    <h1 class="title">En Passant</h1>
-    <h4 class="subtitle">Um compilador de recomendações do <a href="https://xadrezverbal.com/">Xadrez Verbal</a></h4>
+    <div id="header">
+      <h1 class="title">En Passant</h1>
+      <h4 class="subtitle">Um compilador de recomendações do <a href="https://xadrezverbal.com/">Xadrez Verbal</a></h4>
+      <div class="small"><a href="https://github.com/lbrito1">Autor</a> |
+      <a href="https://github.com/lbrito1/enpassant">Código</a>
+      </div>
+    </div>
 
     <div class="container flex one two-1200">
       <div id="sidebar" class="full fourth-1200">
         <h2>Anos</h2>
-        <ul>
-          <% posts.keys.each.with_index do |year, i| %>
+        <ul class="filters">
+          <% posts.keys.reverse.each.with_index do |year, i| %>
             <a class="year-links" id="year-links-<%= year %>" onclick="showYear(<%= year.to_s %>);" href="#"><%= year %></a>
-            <% if i < posts.keys.count - 1 %> | <% end %>
+            <% if i < posts.keys.count - 1 %> <br> <% end %>
           <% end %>
         </ul>
-        <h2>Sobre</h2>
-
-        <p><a href="https://github.com/lbrito1">Autor</a> |
-        <a href="https://github.com/lbrito1/enpassant">Código</a>
-        </p>
       </div>
 
       <div id="main" class="full three-fourth-1200">

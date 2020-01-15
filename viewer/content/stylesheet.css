@@ -60,7 +60,7 @@ a {
   top: 40px;
   width: 100%;
   margin: 0 auto;
-  margin-left: 22%; /* Same as the width of the sidebar */
+  margin-left: 15%; /* Same as the width of the sidebar */
 }
 
 .hidden {
@@ -88,8 +88,10 @@ a {
 }
 
 #sidebar {
+  background: rgb(230,230,230);
+  background: linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 100%);
   padding: 20px 20px 0 0;
-  text-align: right;
+  text-align: center;
   height: 100%; /* Full-height: remove this if you want "auto" height */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
@@ -97,7 +99,7 @@ a {
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
-  width: 22%;
+  width: 15%;
 }
 
 #sidebar h2 {
@@ -140,9 +142,21 @@ a.disabled {
   pointer-events:none;
 }
 
+#header {
+  text-align: center;
+}
+
+.small {
+  font-size: 90%;
+}
+
 #footer {
   margin: 100px 100px;
   text-align: center;
   width: 100%;
   color: grey;
+}
+
+.filters {
+  text-align: center;
 }
