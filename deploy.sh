@@ -46,6 +46,8 @@ git commit -m "Updates static files (automated)."
 
 echo ">>>> Pushing to master (github.io) branch..."
 git push origin master
+git clean -df
+git checkout .
 
 echo ">>>> Checking out development branch..."
 git checkout development
