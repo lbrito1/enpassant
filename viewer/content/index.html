@@ -1,0 +1,49 @@
+---
+title: En Passant
+---
+
+
+
+<% years_ordered.each do |year| %>
+  <% posts_in_year = posts[year] %>
+  <div class="year-posts" id="year-posts-<%= year %>">
+    <h2 class="year" id="<%= year%>"><%= year %></h2>
+
+    <% posts_in_year.each do |month, posts_in_month| %>
+      <h3 class="month"><%= month_label(month.to_i) %></h3>
+
+      <% posts_in_month.each do |post| %>
+        <h4 class="post"><%= post['title'] %> | <a href="<%= post['title'] %>">Link</a></h4>
+        <% post['recommendations'].each do |recommendation| %>
+          <p class="recommendation"><%= recommendation['text'] %> | <a href="<%= recommendation['url'] %>">Link</a></p>
+        <% end %>
+      <% end %>
+    <% end%>
+  </div>
+<% end %>
+
+<script>
+  var year = '<%= current_year %>'
+
+  function hideAllYearPosts() {
+    [].forEach.call(document.querySelectorAll('div.year-posts'), function(div) {
+      div.classList.add("hidden")
+    });
+
+    [].forEach.call(document.querySelectorAll('a.year-links'), function(div) {
+      div.classList.remove("disabled")
+    })
+  }
+
+  function showYear(year) {
+    hideAllYearPosts()
+
+    div = document.querySelector('div.year-posts#year-posts-' + year.toString())
+    div.classList.remove("hidden")
+    div = document.querySelector('a.year-links#year-links-' + year.toString())
+    div.classList.add("disabled")
+  }
+
+  hideAllYearPosts()
+  showYear(<%= current_year %>)
+</script>

@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="https://unpkg.com/picnic">
+
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title><%= @item[:title] %></title>
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <!-- you don't need to keep this, but it's cool for stats! -->
+    <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
+  </head>
+  <body>
+    <h1 class="title">En Passant</h1>
+    <h4 class="subtitle">Um compilador de recomendações do Xadrez Verbal</h4>
+
+    <div class="container flex one two-1200">
+      <div id="sidebar" class="full fourth-1200">
+        <h2>Anos</h2>
+        <ul>
+          <% posts.keys.each.with_index do |year, i| %>
+            <a class="year-links" id="year-links-<%= year %>" onclick="showYear(<%= year.to_s %>);" href="#"><%= year %></a>
+            <% if i < posts.keys.count - 1 %> | <% end %>
+          <% end %>
+        </ul>
+        <h2>Sobre</h2>
+
+        <p>Autor: <a href="https://github.com/lbrito1">Github</a></p>
+
+        <p>Código: <a href="https://github.com/lbrito1/xadrez-compiler">Compilador</a> | <a href="https://github.com/lbrito1/xadrez-viewer">Front-end</a>
+        </p>
+
+        <h2>Disclaimer</h2>
+
+        <p>Não sou o autor do conteúdo exibido aqui. Este site apenas colhe informações disponibilizadas no site do <a href="https://xadrezverbal.com">Xadrez Verbal.</a></p>
+      </div>
+
+      <div id="main" class="full three-fourth-1200">
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>
