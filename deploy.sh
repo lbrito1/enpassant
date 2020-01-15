@@ -12,6 +12,8 @@ git checkout development
 echo ">>>> Calling nanoc..."
 nanoc
 
+cd -
+
 echo ">>>> Adding files with git add..."
 git add .
 
