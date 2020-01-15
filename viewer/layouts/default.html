@@ -1,3 +1,8 @@
+<% require 'i18n' %>
+<% I18n.config.enforce_available_locales = true %>
+<% I18n.available_locales = ["pt-BR"] %>
+<% I18n.default_locale = "pt-BR" %>
+
 <link rel="stylesheet" href="https://unpkg.com/picnic">
 
 <!DOCTYPE HTML>
@@ -27,6 +32,14 @@
             <a class="year-links" id="year-links-<%= year %>" onclick="showYear(<%= year.to_s %>);" href="#"><%= year %></a>
             <% if i < posts.keys.count - 1 %> <br> <% end %>
           <% end %>
+        </ul>
+
+        <h2>Categorias</h2>
+        <ul class="filters">
+          <% categories.each.with_index do |category, i| %>
+            <a class="category-links" href="<%= I18n.transliterate(category) %>"><%= category %></a>
+            <% if i < categories.count - 1 %> <br> <% end %>
+          <% end.join("<br>") %>
         </ul>
       </div>
 

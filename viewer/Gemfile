@@ -7,6 +7,7 @@ group :development do
   gem 'guard'
   gem 'byebug'
   gem 'awesome_print'
+  gem 'i18n'
 end
 
 group :nanoc do

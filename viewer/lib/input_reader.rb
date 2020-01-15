@@ -27,6 +27,10 @@ def recommendations_by_category
   @recommendations_by_category ||= recommendations.group_by(&:category)
 end
 
+def categories
+  Recommendation::CATEGORIES
+end
+
 def recommendations
   @recommendations ||= begin
     list = []

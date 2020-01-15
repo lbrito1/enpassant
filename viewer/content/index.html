@@ -51,6 +51,15 @@ title: En Passant
     div.classList.add("disabled")
   }
 
+  function showCategory(category) {
+    hideAllYearPosts()
+
+    div = document.querySelector('div.year-posts#year-posts-' + year.toString())
+    div.classList.remove("hidden")
+    div = document.querySelector('a.year-links#year-links-' + year.toString())
+    div.classList.add("disabled")
+  }
+
   hideAllYearPosts()
   showYear(<%= current_year %>)
 </script>
