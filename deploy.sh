@@ -28,13 +28,13 @@ echo ">>>> Switching to master (github.io) branch..."
 git checkout master
 
 echo ">>>> Copying output files from development branch..."
-git checkout development output/
+git checkout development viewer/output/
 
 echo ">>>> Moving files to root dir..."
-mv output/* ./
+mv viewer/output/* ./
 
 echo ">>>> Cleaning up output folder..."
-git reset HEAD output/ && git clean -df output/
+git reset HEAD viewer/output/ && git clean -df viewer/output/
 
 # Pushes the changes to the Github Pages branch
 echo ">>>> Adding update site files with git add..."
