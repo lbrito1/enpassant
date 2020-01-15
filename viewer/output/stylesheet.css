@@ -139,3 +139,10 @@ a.disabled {
   color: lightgray;
   pointer-events:none;
 }
+
+#footer {
+  margin: 100px 100px;
+  text-align: center;
+  width: 100%;
+  color: grey;
+}
