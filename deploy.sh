@@ -34,7 +34,8 @@ echo ">>>> Moving files to root dir..."
 mv viewer/output/* ./
 
 echo ">>>> Cleaning up output folder..."
-git reset HEAD viewer/output/ && git clean -df viewer/output/
+git reset HEAD viewer/output/
+git clean -df viewer/output/
 
 # Pushes the changes to the Github Pages branch
 echo ">>>> Adding update site files with git add..."
