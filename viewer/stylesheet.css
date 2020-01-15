@@ -2,39 +2,34 @@
   margin: 0;
   padding: 0;
   font-family: Georgia, Palatino, serif;
+  line-height: 1.5;
 }
 
 .title {
   font-style: italic;
   padding-bottom: 0;
+  font-size: 400%;
+  text-align: center;
+  font-weight: 300;
 }
 
 .subtitle {
   font-style: italic;
   padding-top: 0;
   color: gray;
+  font-weight: 300;
+  font-size: 140%;
+  text-align: center;
 }
 
 body {
   background: #fff;
   /* Never get smaller than this */
-  font-size: 14px;
+  font-size: 16px;
 }
 
 a {
   text-decoration: none;
-}
-
-@media (min-width:600px) {
-  body {
-    font-size: 28px;
-  }
-}
-
-@media (min-width:800px) {
-  body {
-    font-size: 36px;
-  }
 }
 
 @media (min-width:1000px) {
@@ -63,8 +58,9 @@ a {
 
 .container {
   top: 40px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+  margin-left: 22%; /* Same as the width of the sidebar */
 }
 
 .hidden {
@@ -73,12 +69,11 @@ a {
 
 #main h1 {
   font-weight: normal;
-
   letter-spacing: -1px;
 }
 
 #main p {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 #main ul, #main ol {
@@ -94,20 +89,50 @@ a {
 
 #sidebar {
   padding: 20px 20px 0 0;
-
   text-align: right;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  width: 22%;
 }
 
 #sidebar h2 {
   text-transform: uppercase;
-
   letter-spacing: 1px;
 }
 
 #sidebar ul {
   list-style-type: none;
-
   margin: 20px 0;
+}
+
+@media screen and (max-width: 450px) {
+  #sidebar {
+    padding-top: 2px;
+    height: auto;
+    position: static; /* Fixed Sidebar (stay in place on scroll) */
+    width: 100%;
+    text-align: center;
+  }
+
+  .container {
+    margin-left: 0;
+  }
+
+  #sidebar ul {
+    list-style-type: none;
+    margin: 5px 0;
+  }
+
+  #sidebar h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+  }
 }
 
 a.disabled {
