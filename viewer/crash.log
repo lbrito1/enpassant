@@ -1,8 +1,9 @@
-Crashlog created at 2020-01-15 20:14:58 -0300
+Crashlog created at 2020-01-16 18:33:03 -0300
 
 ===== MESSAGE:
 
-NameError: undefined local variable or method `categories' for #<Nanoc::Core::Context:0x0000555f1bd9c270>
+NameError: uninitialized constant CATEGORIES
+Did you mean?  Category
 
 ===== ITEM BEING COMPILED:
 
@@ -10,7 +11,7 @@ Current item: /index.html (:default representation)
 
 ===== STACK TRACE:
 
-  0. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-core-4.11.7/lib/nanoc/core/context.rb:47:in `method_missing'
+  0. lib/helpers/input_reader.rb:27:in `categories'
   1. layout /default.html:39:in `get_binding'
   2. /home/leo/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/erb.rb:901:in `eval'
   3. /home/leo/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/erb.rb:901:in `result'

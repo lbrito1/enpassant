@@ -11,7 +11,7 @@ class Recommendation
     @category ||= begin
       txt = text.downcase
       if cat = Category::CATEGORIES.find { |cat| txt.start_with?(cat) }
-        normalized_category(cat)
+        Category::normalize(cat)
       else
         "diversos"
       end

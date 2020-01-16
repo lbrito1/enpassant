@@ -24,7 +24,7 @@ def recommendations_by_category
 end
 
 def categories
-  CATEGORIES
+  Category::CATEGORIES
 end
 
 def recommendations

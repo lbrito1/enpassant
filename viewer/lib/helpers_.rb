@@ -1,3 +1,4 @@
+# This is the last file loaded!
 puts "Cleaning up & generating files..."
 
 # Cleans up autogen'd files

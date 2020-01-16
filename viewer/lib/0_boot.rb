@@ -1,3 +1,4 @@
+puts
 puts "Booting..."
 require 'json'
 require 'byebug'

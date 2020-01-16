@@ -1,3 +1,4 @@
+puts "Category"
 module Category
   CATEGORIES = %w(livro filme filmografia documentário série música playlist site texto coluna entrevista matéria).freeze
 
