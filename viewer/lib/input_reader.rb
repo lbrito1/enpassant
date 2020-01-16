@@ -1,10 +1,3 @@
-require 'json'
-require 'byebug'
-require 'awesome_print'
-
-# TEMP
-CATEGORIES = %w(livro filme filmografia documentário série música playlist site texto coluna entrevista matéria).freeze
-
 def posts
   @posts ||= begin
     file = File.read('../cache.json')
@@ -60,10 +53,4 @@ end
 
 def current_year
   Time.now.year
-end
-
-# TODO extract this
-# Builds categories pages
-CATEGORIES.each do |category|
-  File.write("./content/category/#{category}.html", "")
 end
