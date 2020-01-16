@@ -6,25 +6,12 @@ compile '/index.html' do
   write '/index.html'
 end
 
-compile '/category.html' do
+compile '/category/*.html' do
   filter :erb
-  layout '/default.*'
-  write item.identifier.without_ext + '.html'
+  cat_name = item.identifier.to_s.split("\/").last.split(".").first
+  layout '/category.*', locals: { name: cat_name }
+  write "/#{I18n.transliterate(cat_name)}.html"
 end
-
-compile '/**/*.html' do
-  layout '/default.*'
-  write item.identifier.without_ext + '.html'
-end
-# This is an example rule that matches Markdown (.md) files, and filters them
-# using the :kramdown filter. It is commented out by default, because kramdown
-# is not bundled with Nanoc or Ruby.
-#
-#compile '/**/*.md' do
-#  filter :kramdown
-#  layout '/default.*'
-#  write item.identifier.without_ext + '/index.html'
-#end
 
 compile '/**/*' do
   write item.identifier.to_s

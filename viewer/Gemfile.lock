@@ -1,6 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (6.0.0)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+      zeitwerk (~> 2.1, >= 2.1.8)
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
     adsf (1.4.2)
@@ -45,6 +51,7 @@ GEM
       ruby_dep (~> 1.2)
     lumberjack (1.0.13)
     method_source (0.9.2)
+    minitest (5.14.0)
     nanoc (4.11.7)
       addressable (~> 2.5)
       colored (~> 1.2)
@@ -86,6 +93,7 @@ GEM
     shellany (0.0.1)
     slow_enumerator_tools (1.1.0)
     thor (0.20.3)
+    thread_safe (0.3.6)
     tomlrb (1.2.8)
     tty-color (0.5.0)
     tty-command (0.8.2)
@@ -106,6 +114,8 @@ GEM
       wisper (~> 2.0.0)
     tty-screen (0.7.0)
     tty-which (0.4.1)
+    tzinfo (1.2.6)
+      thread_safe (~> 0.1)
     wisper (2.0.0)
     zeitwerk (2.1.9)
 
@@ -113,6 +123,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport
   adsf
   awesome_print
   byebug

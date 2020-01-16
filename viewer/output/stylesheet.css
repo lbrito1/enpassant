@@ -67,6 +67,10 @@ a {
   display: none;
 }
 
+h1 {
+  text-align: center;
+}
+
 #main h1 {
   font-weight: normal;
   letter-spacing: -1px;
