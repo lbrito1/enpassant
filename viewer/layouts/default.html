@@ -23,7 +23,7 @@
       <div id="sidebar" class="full fourth-1200">
         <h2>Anos</h2>
         <ul class="filters">
-          <% (2015..2020).each.with_index do |year, i| %>
+          <% Time.now.year.downto(2015).each.with_index do |year, i| %>
             <%= link_to(year, "/#{year}.html") %>
             <% if i < posts.keys.count - 1 %> <br> <% end %>
           <% end %>
