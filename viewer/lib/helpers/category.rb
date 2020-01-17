@@ -1,5 +1,5 @@
 module Category
-  CATEGORIES = %w(livro filme filmografia documentário série música playlist site texto coluna entrevista matéria).freeze
+  CATEGORIES = %w(livro filme filmografia documentário série música playlist site texto coluna entrevista matéria diversos).freeze
 
   class << self
     def normalize(category)
