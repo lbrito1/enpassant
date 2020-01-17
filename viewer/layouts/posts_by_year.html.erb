@@ -1,0 +1,11 @@
+<% render('/default.*') do %>
+  <h1><%= year %></h1>
+
+  <% recommendations.sort_by(&:month).group_by(&:month).each do |month, recommendations| %>
+    <h2><%= month %></h2>
+    <!-- Sort by post -->
+    <% render('/recommendation_index.*', recommendations: recommendations) do %>
+      <%= yield %>
+    <% end %>
+  <% end %>
+<% end %>
