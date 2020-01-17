@@ -23,8 +23,8 @@
       <div id="sidebar" class="full fourth-1200">
         <h2>Anos</h2>
         <ul class="filters">
-          <% posts.keys.reverse.each.with_index do |year, i| %>
-            <a class="year-links" id="year-links-<%= year %>" onclick="showYear(<%= year.to_s %>);" href="#"><%= year %></a>
+          <% (2015..2020).each.with_index do |year, i| %>
+            <%= link_to(year, "/#{year}.html") %>
             <% if i < posts.keys.count - 1 %> <br> <% end %>
           <% end %>
         </ul>
