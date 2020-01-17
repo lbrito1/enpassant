@@ -1,10 +1,13 @@
 class Recommendation
-  attr_reader :text, :url, :post_url
+  attr_reader :text, :url, :post_url, :year, :month
 
-  def initialize(text:, url:, post_url:)
+  def initialize(text:, url:, post_url:, post_title:, year:, month:)
     @text = text
     @url = url
     @post_url = post_url
+    @post_title = post_title
+    @year = year
+    @month = month
   end
 
   def category

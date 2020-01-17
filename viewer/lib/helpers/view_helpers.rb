@@ -23,6 +23,10 @@ def recommendations_by_category
   @recommendations_by_category ||= recommendations.group_by(&:category)
 end
 
+def recommendations_by_year
+  @recommendations_by_year ||= recommendations.group_by(&:year)
+end
+
 def categories
   Category::normalized_categories
 end
@@ -30,14 +34,17 @@ end
 def recommendations
   @recommendations ||= begin
     list = []
-    posts.each do |_year, posts_by_year|
+    posts.each do |year, posts_by_year|
       posts_by_year.each do |month, posts_by_month|
         posts_by_month.each do |post|
           post['recommendations'].each do |rec|
             list << Recommendation.new(
               text: rec["text"],
               url: rec["url"],
-              post_url: post["url"])
+              post_url: post["url"],
+              post_title: post["title"],
+              year: year,
+              month: month)
           end
         end
       end

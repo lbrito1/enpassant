@@ -1,0 +1,21 @@
+require './lib/helpers/category'
+
+desc "Creates the necessary static files"
+task :update do |args|
+  mkdir_p './content/category'
+  mkdir_p './content/year'
+
+  # Cleans up things
+  `rm .content/category/*`
+  `rm .content/year/*`
+
+  # Creates Categories
+  Category::normalized_categories.each do |id|
+    File.write("./content/category/#{id}.html", "---\nid: #{id}\n---\n\n")
+  end
+
+  # Creates years
+  (2015..Time.now.year).each do |id|
+    File.write("./content/year/#{id}.html", "---\nid: #{id}\n---\n\n")
+  end
+end

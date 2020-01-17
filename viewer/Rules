@@ -6,6 +6,14 @@ compile '/index.html' do
   write '/index.html'
 end
 
+route '/year/*.html' do
+  year = item.identifier
+  puts "#{year}"
+  filter :erb
+  layout '/posts_by_year.*', locals: { year: "2019" }
+  '/2019.html'
+end
+
 compile '/category/*.html' do
   filter :erb
   cat_name = item.identifier.to_s.split("\/").last.split(".").first
