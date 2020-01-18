@@ -174,8 +174,12 @@ a.disabled {
   display: flex;
   align-items: center;
   font-size: 110%;
-  background-color: #f3f3f3;
   margin: 30px;
+}
+
+.recommendation-wrapper:hover {
+  background-color: #f3f3f3;
+  transition:all 0.1s ease;
 }
 
 .recommendation-icon-img {
