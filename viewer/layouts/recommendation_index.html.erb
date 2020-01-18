@@ -1,8 +1,5 @@
 <% recommendations.each do |recommendation| %>
-  <div class="recommendation-box">
-    <div class="recommendation-icon">
-      <!-- <img src="recommendaiton-#{recommendation}"/> -->
-    </div>
-    <%= recommendation.linted_text %>
+  <div class="recommendation-wrapper">
+    <%= render '/recommendation.*', recommendation: recommendation %>
   </div>
 <% end%>

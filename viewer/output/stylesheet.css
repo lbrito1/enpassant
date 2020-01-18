@@ -58,7 +58,7 @@ a {
 
 .container {
   top: 40px;
-  width: 100%;
+  width: 85%; /* Minus sidebar */
   margin: 0 auto;
   margin-left: 15%; /* Same as the width of the sidebar */
 }
@@ -159,8 +159,35 @@ a.disabled {
   text-align: center;
   width: 100%;
   color: grey;
+  width: 85%; /* Minus sidebar */
 }
 
 .filters {
   text-align: center;
+}
+
+.flex {
+  text-align: left;
+}
+
+.recommendation-wrapper {
+}
+
+.recommendation-icon-img {
+  width: 1em;
+}
+
+.recommendation-img {
+  width: 1.4em;
+  text-align: center;
+  margin: auto;
+}
+
+
+.recommendation-box {
+  margin: 30px 30px;
+}
+
+.recommendation-title {
+  vertical-align: center;
 }

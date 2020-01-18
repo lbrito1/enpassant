@@ -21,9 +21,21 @@ class Recommendation
   end
 
   def linted_text
-    return text if category == "diversos"
+    return text if %(diversos textos).include?(category)
 
-    text.gsub(/#{base_category}/i, "").strip
+    text.gsub(/#{base_category}\s+/i, "").strip.capitalize
+  end
+
+  def title
+    return linted_text unless author
+
+    linted_text[/(.+),\sd[eoa]/i, 1].titleize
+  end
+
+  def author
+    return unless %w(livro filme música).include?(category)
+
+    linted_text[/,\sd[eoa]\s(.+)$/i, 1]&.titleize
   end
 
   private
