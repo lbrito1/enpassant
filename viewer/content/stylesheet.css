@@ -175,6 +175,7 @@ a.disabled {
   align-items: center;
   font-size: 110%;
   margin: 30px;
+  color: #333 !important;
 }
 
 .recommendation-wrapper:hover {
@@ -198,4 +199,11 @@ a.disabled {
 
 .recommendation-title {
   vertical-align: center;
+}
+
+.recommendation-author {
+  text-align: right;
+}
+
+.recommendation-link {
 }

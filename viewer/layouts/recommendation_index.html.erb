@@ -1,8 +1,11 @@
 <% recommendations.each do |recommendation| %>
+<a href="<%= recommendation.url %>">
   <div class="recommendation-wrapper">
     <span class="recommendation-img">
       <img class="recommendation-icon-img" src="assets/icons/<%= recommendation.icon_name %>.svg"/>
     </span>
     <%= render '/recommendation.*', recommendation: recommendation %>
   </div>
+  </a>
+
 <% end%>
