@@ -40,7 +40,7 @@ class Recommendation
 
   # TODO move to presenter
   def icon_name
-    norm = Category::normalized_category(category)
+    norm = Category::normalize(category)
     return 'film' if norm == 'filme'
     return 'tv' if norm == 'série'
     return 'music' if norm == 'música'

@@ -171,6 +171,11 @@ a.disabled {
 }
 
 .recommendation-wrapper {
+  display: flex;
+  align-items: center;
+  font-size: 110%;
+  background-color: #f3f3f3;
+  margin: 30px;
 }
 
 .recommendation-icon-img {
@@ -180,9 +185,8 @@ a.disabled {
 .recommendation-img {
   width: 1.4em;
   text-align: center;
-  margin: auto;
+  margin-left: 20px;
 }
-
 
 .recommendation-box {
   margin: 30px 30px;
