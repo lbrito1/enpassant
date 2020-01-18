@@ -38,6 +38,17 @@ class Recommendation
     linted_text[/,\sd[eoa]\s(.+)$/i, 1]&.titleize
   end
 
+  # TODO move to presenter
+  def icon_name
+    norm = Category::normalized_category(category)
+    return 'film' if norm == 'filme'
+    return 'tv' if norm == 'série'
+    return 'music' if norm == 'música'
+    return 'book' if norm == 'livro'
+    return 'file-text' if norm == 'text'
+    'package'
+  end
+
   private
 
   def base_category

@@ -1,13 +1,14 @@
-<div class="recommendation-box flex two">
-  <div class="recommendation-title">
+<div class="recommendation-box flex four">
+  <div class="recommendation-title three-fourth">
     <span class="recommendation-img">
-      <img class="recommendation-icon-img" src="assets/icons/film.svg"/>
+      <img class="recommendation-icon-img" src="assets/icons/<%= recommendation.icon_name %>.svg"/>
     </span>
 
     <%= recommendation.title %>
   </div>
-  <div class="recommendation-author">
-    <div>Autor</div>
-    <%= recommendation.author %>
-  </div>
+  <% if recommendation.author %>
+    <div class="recommendation-author">
+      <div>Autor: <%= recommendation.author %></div>
+    </div>
+  <% end %>
 </div>
