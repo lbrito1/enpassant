@@ -1,9 +1,9 @@
-Crashlog created at 2020-01-20 18:42:21 -0300
+Crashlog created at 2020-01-20 19:08:02 -0300
 
 ===== MESSAGE:
 
-NoMethodError: undefined method `recommendations_by_month' for #<Nanoc::Core::Context:0x000055c2b70ad500>
-Did you mean?  recommendations_by_year
+NoMethodError: undefined method `post_title' for #<Recommendation:0x000055c2b753af78>
+Did you mean?  post_url
 
 ===== ITEM BEING COMPILED:
 
@@ -11,27 +11,42 @@ Current item: /year/2019.html (:default representation)
 
 ===== STACK TRACE:
 
-  0. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-core-4.11.7/lib/nanoc/core/context.rb:47:in `method_missing'
-  1. layout /posts_by_year.html.erb:4:in `block in get_binding'
-  2. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/helpers/capturing.rb:155:in `capture'
-  3. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/helpers/rendering.rb:29:in `render'
-  4. layout /posts_by_year.html.erb:1:in `get_binding'
-  5. /home/leo/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/erb.rb:901:in `eval'
-  6. /home/leo/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/erb.rb:901:in `result'
-  7. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/filters/erb.rb:36:in `run'
-  8. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/base/services/filter.rb:187:in `setup_and_run'
-  9. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/base/services/executor.rb:66:in `layout'
-  10. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/base/services/compiler/phases/recalculate.rb:35:in `block in run'
-  11. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-core-4.11.7/lib/nanoc/core/action_sequence.rb:49:in `block in each'
-  12. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-core-4.11.7/lib/nanoc/core/action_sequence.rb:49:in `each'
-  13. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-core-4.11.7/lib/nanoc/core/action_sequence.rb:49:in `each'
-  14. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/base/services/compiler/phases/recalculate.rb:30:in `run'
-  15. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/base/services/compiler/phases/abstract.rb:24:in `call'
-  16. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/base/services/compiler/phases/abstract.rb:26:in `block in call'
-  17. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/base/services/compiler/phases/cache.rb:26:in `run'
-  18. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/base/services/compiler/phases/abstract.rb:24:in `call'
-  19. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/base/services/compiler/phases/abstract.rb:26:in `block in call'
-  20. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/base/services/compiler/phases/resume.rb:15:in `block in run'
+  0. layout /recommendation.html.erb:4:in `get_binding'
+  1. /home/leo/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/erb.rb:901:in `eval'
+  2. /home/leo/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/erb.rb:901:in `result'
+  3. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/filters/erb.rb:36:in `run'
+  4. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/base/services/filter.rb:187:in `setup_and_run'
+  5. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/helpers/rendering.rb:55:in `render'
+  6. layout /recommendation_index.html.erb:7:in `block in get_binding'
+  7. layout /recommendation_index.html.erb:1:in `each'
+  8. layout /recommendation_index.html.erb:1:in `get_binding'
+  9. /home/leo/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/erb.rb:901:in `eval'
+  10. /home/leo/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/erb.rb:901:in `result'
+  11. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/filters/erb.rb:36:in `run'
+  12. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/base/services/filter.rb:187:in `setup_and_run'
+  13. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/helpers/rendering.rb:55:in `render'
+  14. layout /posts_by_year.html.erb:24:in `block (2 levels) in get_binding'
+  15. layout /posts_by_year.html.erb:14:in `each'
+  16. layout /posts_by_year.html.erb:14:in `block in get_binding'
+  17. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/helpers/capturing.rb:155:in `capture'
+  18. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/helpers/rendering.rb:29:in `render'
+  19. layout /posts_by_year.html.erb:1:in `get_binding'
+  20. /home/leo/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/erb.rb:901:in `eval'
+  21. /home/leo/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/erb.rb:901:in `result'
+  22. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/filters/erb.rb:36:in `run'
+  23. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/base/services/filter.rb:187:in `setup_and_run'
+  24. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/base/services/executor.rb:66:in `layout'
+  25. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/base/services/compiler/phases/recalculate.rb:35:in `block in run'
+  26. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-core-4.11.7/lib/nanoc/core/action_sequence.rb:49:in `block in each'
+  27. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-core-4.11.7/lib/nanoc/core/action_sequence.rb:49:in `each'
+  28. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-core-4.11.7/lib/nanoc/core/action_sequence.rb:49:in `each'
+  29. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/base/services/compiler/phases/recalculate.rb:30:in `run'
+  30. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/base/services/compiler/phases/abstract.rb:24:in `call'
+  31. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/base/services/compiler/phases/abstract.rb:26:in `block in call'
+  32. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/base/services/compiler/phases/cache.rb:26:in `run'
+  33. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/base/services/compiler/phases/abstract.rb:24:in `call'
+  34. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/base/services/compiler/phases/abstract.rb:26:in `block in call'
+  35. /home/leo/.rvm/gems/ruby-2.6.3/gems/nanoc-4.11.7/lib/nanoc/base/services/compiler/phases/resume.rb:15:in `block in run'
 
 ===== VERSION INFORMATION:
 

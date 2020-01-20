@@ -1,5 +1,5 @@
 class Recommendation
-  attr_reader :text, :url, :post_url, :year, :month
+  attr_reader :text, :url, :post_url, :post_title, :year, :month
 
   def initialize(text:, url:, post_url:, post_title:, year:, month:)
     @text = text
@@ -21,7 +21,7 @@ class Recommendation
   end
 
   def linted_text
-    return text if %(diversos textos).include?(category)
+    return text if %(diversos textos sites).include?(category)
 
     text.gsub(/#{base_category}\s+/i, "").strip.capitalize
   end

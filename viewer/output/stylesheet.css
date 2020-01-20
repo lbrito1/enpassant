@@ -46,6 +46,9 @@ a {
 
 .month {
   font-style: italic;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .post {
@@ -229,10 +232,11 @@ a.disabled {
   position:absolute;
   /*top:50%;*/
   bottom:50%;
-  transform:translate(-50%, -100%);
+  transform:translate(-50%, -350%);
   padding-right: 40px;
 }
 
-.month {
-  text-align: center;
+.recommendation-episode {
+  opacity: 30%;
+  font-size: 80%;
 }
