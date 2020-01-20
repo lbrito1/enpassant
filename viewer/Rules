@@ -15,7 +15,6 @@ end
 
 compile '/category/*.html' do
   filter :erb
-  puts "AA#{item[:id]}"
   layout '/category.*', locals: { name: item[:id] }
   write "/#{I18n.transliterate(item[:id])}.html"
 end
