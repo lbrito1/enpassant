@@ -8,7 +8,7 @@
 .title {
   font-style: italic;
   padding-bottom: 0;
-  font-size: 400%;
+  font-size: 8vw;
   text-align: center;
   font-weight: 300;
 }
@@ -25,7 +25,7 @@
 body {
   background: #fff;
   /* Never get smaller than this */
-  font-size: 16px;
+  font-size: 4vw;
 }
 
 a {
@@ -35,7 +35,12 @@ a {
 @media (min-width:1000px) {
   body {
     /* Never get larger than this */
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+
+  .title {
+    font-size: 6vw;
   }
 }
 
@@ -46,6 +51,9 @@ a {
 
 .month {
   font-style: italic;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .post {
@@ -58,13 +66,17 @@ a {
 
 .container {
   top: 40px;
-  width: 100%;
+  width: 85%; /* Minus sidebar */
   margin: 0 auto;
   margin-left: 15%; /* Same as the width of the sidebar */
 }
 
 .hidden {
   display: none;
+}
+
+h1 {
+  text-align: center;
 }
 
 #main h1 {
@@ -88,9 +100,7 @@ a {
 }
 
 #sidebar {
-  background: rgb(230,230,230);
-  background: linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 100%);
-  padding: 20px 20px 0 0;
+  padding: 20px 20px 20px 20px;
   text-align: center;
   height: 100%; /* Full-height: remove this if you want "auto" height */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
@@ -107,12 +117,111 @@ a {
   letter-spacing: 1px;
 }
 
+
 #sidebar ul {
   list-style-type: none;
   margin: 20px 0;
 }
 
-@media screen and (max-width: 450px) {
+a.disabled {
+  color: lightgray;
+  pointer-events:none;
+}
+
+#header {
+  text-align: center;
+}
+
+.strong {
+  font-weight: bold;
+  font-size: 110%;
+}
+
+#footer {
+  margin: 100px 100px;
+  text-align: center;
+  width: 100%;
+  color: grey;
+  width: 85%; /* Minus sidebar */
+}
+
+.filters {
+  text-align: center;
+  margin: 5px 5px;
+}
+
+.flex {
+  text-align: left;
+}
+
+.recommendation-wrapper {
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  font-size: 110%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  color: #333 !important;
+}
+
+.recommendation-wrapper:hover {
+  background-color: #f3f3f3;
+  transition:all 0.1s ease;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.recommendation-icon-img {
+  width: 1em;
+}
+
+.recommendation-img {
+  width: 1.4em;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.recommendation-box {
+  margin: 30px 30px;
+}
+
+.recommendation-title {
+  vertical-align: center;
+}
+
+.recommendation-author {
+  text-align: right;
+  color: #888;
+}
+
+.recommendation-link {
+}
+
+.month-nav {
+  text-align: center;
+}
+
+.back-to-top-outside {
+  text-align: right;
+  position:relative;
+}
+
+.back-to-top-inside {
+  position:absolute;
+  /*top:50%;*/
+  bottom:50%;
+  transform:translate(-50%, -350%);
+  padding-right: 40px;
+}
+
+.recommendation-episode {
+  opacity: 30%;
+  font-size: 80%;
+}
+
+@media screen and (max-width: 1000px) {
   #sidebar {
     padding-top: 2px;
     height: auto;
@@ -135,28 +244,12 @@ a {
     letter-spacing: 1px;
     margin: 0;
   }
-}
 
-a.disabled {
-  color: lightgray;
-  pointer-events:none;
-}
+  .container {
+    width: 100%;
+  }
 
-#header {
-  text-align: center;
-}
-
-.small {
-  font-size: 90%;
-}
-
-#footer {
-  margin: 100px 100px;
-  text-align: center;
-  width: 100%;
-  color: grey;
-}
-
-.filters {
-  text-align: center;
+  .recommendation-wrapper {
+    margin-left: 0;
+  }
 }
