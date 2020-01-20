@@ -8,7 +8,7 @@
 .title {
   font-style: italic;
   padding-bottom: 0;
-  font-size: 400%;
+  font-size: 8vw;
   text-align: center;
   font-weight: 300;
 }
@@ -25,7 +25,7 @@
 body {
   background: #fff;
   /* Never get smaller than this */
-  font-size: 16px;
+  font-size: 4vw;
 }
 
 a {
@@ -35,7 +35,12 @@ a {
 @media (min-width:1000px) {
   body {
     /* Never get larger than this */
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+
+  .title {
+    font-size: 6vw;
   }
 }
 
@@ -95,8 +100,6 @@ h1 {
 }
 
 #sidebar {
-  background: rgb(230,230,230);
-  background: linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 100%);
   padding: 20px 20px 0 0;
   text-align: center;
   height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -118,31 +121,6 @@ h1 {
 #sidebar ul {
   list-style-type: none;
   margin: 20px 0;
-}
-
-@media screen and (max-width: 450px) {
-  #sidebar {
-    padding-top: 2px;
-    height: auto;
-    position: static; /* Fixed Sidebar (stay in place on scroll) */
-    width: 100%;
-    text-align: center;
-  }
-
-  .container {
-    margin-left: 0;
-  }
-
-  #sidebar ul {
-    list-style-type: none;
-    margin: 5px 0;
-  }
-
-  #sidebar h2 {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: 0;
-  }
 }
 
 a.disabled {
@@ -239,4 +217,37 @@ a.disabled {
 .recommendation-episode {
   opacity: 30%;
   font-size: 80%;
+}
+
+@media screen and (max-width: 1000px) {
+  #sidebar {
+    padding-top: 2px;
+    height: auto;
+    position: static; /* Fixed Sidebar (stay in place on scroll) */
+    width: 100%;
+    text-align: center;
+  }
+
+  .container {
+    margin-left: 0;
+  }
+
+  #sidebar ul {
+    list-style-type: none;
+    margin: 5px 0;
+  }
+
+  #sidebar h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .recommendation-wrapper {
+    margin-left: 0;
+  }
 }
