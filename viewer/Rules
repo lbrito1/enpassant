@@ -2,7 +2,7 @@
 
 compile '/index.html' do
   filter :erb
-  layout '/default.*'
+  layout '/posts_by_year.*', locals: { year: Time.now.year }
   write '/index.html'
 end
 

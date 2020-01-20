@@ -1,8 +1,25 @@
 <% render('/default.*') do %>
   <h1><%= year %></h1>
 
-  <% recommendations_by_year[year.to_s].sort_by(&:month).group_by(&:month).each do |month, recommendations| %>
-    <h2><%= month %></h2>
+  <div class="month-nav">
+    <% recommendations_by_month(year).keys.each.with_index do |month, i| %>
+      <% lbl = month_label(month.to_i) %>
+      <a href="#<%= month %>"><%= lbl %></a>
+      <% unless i == recommendations_by_month(year).keys.size - 1 %>
+        &#183;
+      <% end %>
+    <% end %>
+  </div>
+
+  <% recommendations_by_month(year).each do |month, recommendations| %>
+    <div class="flex two">
+      <h2 id="<%= month %>"><%= month_label(month.to_i) %></h2>
+      <div class="back-to-top-outside">
+        <a class="back-to-top-inside" href="#">
+          <img class="back-to-top-icon" src="assets/icons/arrow-up.svg"/>
+        </a>
+      </div>
+    </div>
     <!-- Sort by post -->
     <% render('/recommendation_index.*', recommendations: recommendations) do %>
       <%= yield %>

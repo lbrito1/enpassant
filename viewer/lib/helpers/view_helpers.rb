@@ -27,6 +27,10 @@ def recommendations_by_year
   @recommendations_by_year ||= recommendations.group_by(&:year)
 end
 
+def recommendations_by_month(year)
+  recommendations_by_year[year.to_s].sort_by(&:month).group_by(&:month)
+end
+
 def categories
   Category::normalized_categories
 end

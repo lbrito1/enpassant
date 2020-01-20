@@ -171,6 +171,7 @@ a.disabled {
 }
 
 .recommendation-wrapper {
+  background-color: #f9f9f9;
   display: flex;
   align-items: center;
   font-size: 110%;
@@ -208,7 +209,25 @@ a.disabled {
 
 .recommendation-author {
   text-align: right;
+  color: #888;
 }
 
 .recommendation-link {
+}
+
+.month-nav {
+  text-align: center;
+}
+
+.back-to-top-outside {
+  text-align: right;
+  position:relative;
+}
+
+.back-to-top-inside {
+  position:absolute;
+  top:50%;
+  bottom:50%;
+  transform:translate(-50%, -50%);
+  padding-right: 40px;
 }
