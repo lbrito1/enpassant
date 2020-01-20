@@ -111,6 +111,7 @@ h1 {
   letter-spacing: 1px;
 }
 
+
 #sidebar ul {
   list-style-type: none;
   margin: 20px 0;
@@ -226,8 +227,12 @@ a.disabled {
 
 .back-to-top-inside {
   position:absolute;
-  top:50%;
+  /*top:50%;*/
   bottom:50%;
-  transform:translate(-50%, -50%);
+  transform:translate(-50%, -100%);
   padding-right: 40px;
+}
+
+.month {
+  text-align: center;
 }

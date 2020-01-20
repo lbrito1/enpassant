@@ -12,8 +12,8 @@
   </div>
 
   <% recommendations_by_month(year).each do |month, recommendations| %>
-    <div class="flex two">
-      <h2 id="<%= month %>"><%= month_label(month.to_i) %></h2>
+    <div class="flex one">
+      <h2 class="month" id="<%= month %>"><%= month_label(month.to_i) %></h2>
       <div class="back-to-top-outside">
         <a class="back-to-top-inside" href="#">
           <img class="back-to-top-icon" src="assets/icons/arrow-up.svg"/>
