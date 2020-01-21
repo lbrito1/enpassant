@@ -1,6 +1,6 @@
 # Xadrez Verbal recommendations crawler
 
-![https://lbrito1.github.io/enpassant/](/content/asset/screenshot.png)
+![https://lbrito1.github.io/enpassant/](/screenshot.png)
 
 Xadrez Verbal is a Brazilian podcast on international politics. Each episode brings a few cultural recommendations such as movies, books, music etc.
 
