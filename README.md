@@ -1,10 +1,10 @@
 # Xadrez Verbal recommendations crawler
 
-![https://lbrito1.github.io/enpassant/](/content/asset/screenshot.png)
+![https://lbrito1.github.io/enpassant/](/screenshot.png)
 
 Xadrez Verbal is a Brazilian podcast on international politics. Each episode brings a few cultural recommendations such as movies, books, music etc.
 
-This app goes through Xadrez Verbal's (website)[https://xadrezverbal.com/] looking for those recommendations and compiles them into a friendlier data format, which are then displayed in the website you see in the screenshot above.
+This app goes through Xadrez Verbal's [website](https://xadrezverbal.com/) looking for those recommendations and compiles them into a friendlier data format, which are then displayed in the website you see in the screenshot above.
 
 ## Usage
 
