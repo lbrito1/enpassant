@@ -21,7 +21,7 @@ echo ">>>> Commiting..."
 git commit -m "Updates static files (automated)."
 
 echo ">>>> Pushing to development branch..."
-git push https://lbrito1:"$GITHUB_TOKEN"@enpassant.git origin development
+git push https://lbrito1:"$GITHUB_TOKEN"@github.com/lbrito1/enpassant.git origin development
 
 # Copies the static site files to the correct branch
 echo ">>>> Switching to master (github.io) branch..."
@@ -45,7 +45,7 @@ echo ">>>> Committing..."
 git commit -m "Updates static files (automated)."
 
 echo ">>>> Pushing to master (github.io) branch..."
-git push https://lbrito1:"$GITHUB_TOKEN"@enpassant.git origin master
+git push https://lbrito1:"$GITHUB_TOKEN"@github.com/lbrito1/enpassant.git origin master
 git clean -df
 git checkout .
 
