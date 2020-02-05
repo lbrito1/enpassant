@@ -10,7 +10,7 @@ echo ">>>> Switching to development branch..."
 git checkout development
 
 echo ">>>> Calling nanoc..."
-nanoc
+bundle exec nanoc
 
 cd -
 
