@@ -1,0 +1,4 @@
+viewer/vendor/
+viewer/tmp/
+viewer/.byebug_history
+compiler/crash.log
