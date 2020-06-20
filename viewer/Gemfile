@@ -1,16 +1,18 @@
-source "https://rubygems.org"
+source 'https://rubygems.org' do
+  ruby '~> 2.6.5'
 
-gem 'nanoc'
+  gem 'nanoc'
 
-group :development do
-  gem 'adsf'
-  gem 'guard'
-  gem 'byebug'
-  gem 'awesome_print'
-  gem 'i18n'
-  gem 'activesupport'
-end
+  group :development do
+    gem 'adsf'
+    gem 'guard'
+    gem 'byebug'
+    gem 'awesome_print'
+    gem 'i18n'
+    gem 'activesupport'
+  end
 
-group :nanoc do
-  gem 'guard-nanoc'
+  group :nanoc do
+    gem 'guard-nanoc'
+  end
 end

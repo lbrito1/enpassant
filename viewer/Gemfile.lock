@@ -123,14 +123,17 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activesupport
-  adsf
-  awesome_print
-  byebug
-  guard
-  guard-nanoc
-  i18n
-  nanoc
+  activesupport!
+  adsf!
+  awesome_print!
+  byebug!
+  guard!
+  guard-nanoc!
+  i18n!
+  nanoc!
+
+RUBY VERSION
+   ruby 2.6.5p114
 
 BUNDLED WITH
-   1.17.2
+   1.17.3
