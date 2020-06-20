@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Crawls through their site, creates/updates JSON store
+echo $(date)
 echo ">>>> Crawling site..."
 ruby -e 'require "./compiler/app/crawler"; Crawler.new.call'
 
@@ -10,7 +11,7 @@ echo ">>>> Switching to development branch..."
 git checkout development
 
 echo ">>>> Calling nanoc..."
-nanoc
+bundle exec nanoc
 
 cd -
 
