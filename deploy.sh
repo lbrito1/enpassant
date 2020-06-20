@@ -12,7 +12,7 @@ git checkout development
 
 echo ">>>> Calling nanoc..."
 bundle install
-bundle exec nanoc
+nanoc
 
 cd -
 
