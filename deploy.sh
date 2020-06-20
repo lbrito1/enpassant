@@ -11,7 +11,7 @@ echo ">>>> Switching to development branch..."
 git checkout development
 
 echo ">>>> Calling nanoc..."
-bundle install
+bundle install --gemfile=./compiler/Gemfile
 bundle exec nanoc
 
 cd -
