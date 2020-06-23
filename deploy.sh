@@ -3,7 +3,9 @@
 # Crawls through their site, creates/updates JSON store
 echo $(date)
 echo ">>>> Crawling site..."
+cd compiler
 bundle install
+cd -
 ruby -e 'require "./compiler/app/crawler"; Crawler.new.call'
 
 # Regenerates the static site
