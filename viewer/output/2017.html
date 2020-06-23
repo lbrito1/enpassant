@@ -1,21 +1,13 @@
-<link rel="stylesheet" href="https://unpkg.com/picnic">
-
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155745231-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-155745231-2');
-    </script>
-
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="stylesheet.css">
+
+    <script src="/assets/sane-tracker.js"></script>
+
+    <link rel="stylesheet" href="/assets/pure-min.css">
+    <link rel="stylesheet" href="/assets/stylesheet.css">
 
     <!-- you don't need to keep this, but it's cool for stats! -->
     <meta name="generator" content="Nanoc 4.11.7">
@@ -3448,5 +3440,9 @@
       <p>Não sou o autor do conteúdo exibido aqui. Este site apenas colhe informações disponibilizadas no site do <a href="https://xadrezverbal.com">Xadrez Verbal.</a></p>
     </div>
   </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", sane_track);
+  </script>
 </html>
 
