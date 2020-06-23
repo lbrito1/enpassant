@@ -6,7 +6,7 @@ echo ">>>> Crawling site..."
 cd compiler
 bundle install
 cd -
-ruby -e 'require "./compiler/app/crawler"; Crawler.new.call'
+# ruby -e 'require "./compiler/app/crawler"; Crawler.new.call'
 
 # Regenerates the static site
 cd viewer
