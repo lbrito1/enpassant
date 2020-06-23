@@ -11,9 +11,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  awesome_print
-  byebug
-  nokogiri
+  awesome_print!
+  byebug!
+  nokogiri!
+
+RUBY VERSION
+   ruby 2.6.5p114
 
 BUNDLED WITH
    2.1.4
