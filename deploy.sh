@@ -6,6 +6,8 @@ ruby -e 'require "./compiler/app/crawler"; Crawler.new.call'
 # Regenerates the static site
 cd viewer
 git checkout development
+rvm use 2.6.5
+bundle
 nanoc
 git add .
 git commit -m "Updates static files (automated)."
