@@ -35,6 +35,9 @@ git checkout master
 echo ">>>> Copying output files from development branch..."
 git checkout development viewer/output/
 
+echo ">>>> Cleaning assets..."
+rm -rf ./assets
+
 echo ">>>> Moving files to root dir..."
 mv viewer/output/* ./
 
