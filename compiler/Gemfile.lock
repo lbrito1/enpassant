@@ -1,11 +1,16 @@
 GEM
+  specs:
+
+GEM
   remote: https://rubygems.org/
   specs:
     awesome_print (1.8.0)
     byebug (11.0.1)
-    mini_portile2 (2.4.0)
-    nokogiri (1.10.8)
-      mini_portile2 (~> 2.4.0)
+    mini_portile2 (2.5.1)
+    nokogiri (1.11.4)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
+    racc (1.5.2)
 
 PLATFORMS
   ruby
