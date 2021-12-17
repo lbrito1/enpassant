@@ -10,3 +10,5 @@ prune:
 data_sources:
   - type: filesystem
     encoding: utf-8
+
+base_url: https://lbrito1.github.io/enpassant
