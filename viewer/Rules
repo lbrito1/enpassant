@@ -3,6 +3,7 @@
 compile '/index.html' do
   filter :erb
   layout '/posts_by_year.*', locals: { year: Time.now.year }
+  filter :relativize_paths, type: :html5
   write '/index.html'
 end
 
@@ -10,26 +11,27 @@ compile '/year/*.html' do
   year = item.identifier
   filter :erb
   layout '/posts_by_year.*', locals: { year: item[:id] }
+  filter :relativize_paths, type: :html5
   write "/#{item[:id]}.html"
 end
 
 compile '/category/*.html' do
   filter :erb
   layout '/category.*', locals: { name: item[:id] }
+  filter :relativize_paths, type: :html5
   write "/#{I18n.transliterate(item[:id])}.html"
 end
 
 # rss feed
 compile "/feed.erb" do
   filter :erb
+  filter :relativize_paths, type: :html5
   write "/feed.xml"
 end
 
 # Assets
-
-compile '/**/*.sss' do
+compile '/**/*.css' do
   filter :relativize_paths, type: :css
-  # filter :sass, syntax: :scss
   write @item.identifier.without_ext + '.css'
 end
 
