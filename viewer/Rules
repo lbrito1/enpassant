@@ -19,6 +19,20 @@ compile '/category/*.html' do
   write "/#{I18n.transliterate(item[:id])}.html"
 end
 
+# rss feed
+compile "/feed.erb" do
+  filter :erb
+  write "/feed.xml"
+end
+
+# Assets
+
+compile '/**/*.sss' do
+  filter :relativize_paths, type: :css
+  # filter :sass, syntax: :scss
+  write @item.identifier.without_ext + '.css'
+end
+
 compile '/**/*' do
   write item.identifier.to_s
 end
