@@ -3,9 +3,9 @@ GEM
   specs:
     awesome_print (1.8.0)
     byebug (11.0.1)
-    mini_portile2 (2.4.0)
-    nokogiri (1.10.8)
-      mini_portile2 (~> 2.4.0)
+    nokogiri (1.12.5-x86_64-linux)
+      racc (~> 1.4)
+    racc (1.6.0)
 
 PLATFORMS
   ruby
@@ -14,7 +14,7 @@ PLATFORMS
 DEPENDENCIES
   awesome_print!
   byebug!
-  nokogiri!
+  nokogiri (>= 1.12.5)!
 
 RUBY VERSION
    ruby 2.6.5p114
