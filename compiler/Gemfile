@@ -1,7 +1,7 @@
 source 'https://rubygems.org' do
   ruby '~> 2.6.5'
 
-  gem 'nokogiri'
+  gem "nokogiri", ">= 1.12.5"
 
   group :development do
     gem 'byebug'
