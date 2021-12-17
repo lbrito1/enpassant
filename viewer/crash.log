@@ -1,41 +1,31 @@
-Crashlog created at 2021-12-16 21:02:07 -0800
+Crashlog created at 2021-12-16 21:04:33 -0800
 
 ===== MESSAGE:
 
-LoadError: cannot load such file -- nokogiri
-1. Add `gem 'nokogiri'` to your Gemfile
-2. Run `bundle install`
-3. Re-run this command
-
-===== ITEM BEING COMPILED:
-
-Current item: /year/2019.html (:default representation)
+Bundler::RubyVersionMismatch: Your Ruby version is 2.6.5, but your Gemfile specified ~> 2.7.4
 
 ===== STACK TRACE:
 
-  0. /home/leo/.rvm/gems/ruby-2.7.4/gems/zeitwerk-2.5.1/lib/zeitwerk/kernel.rb:35:in `require'
-  1. /home/leo/.rvm/gems/ruby-2.7.4/gems/zeitwerk-2.5.1/lib/zeitwerk/kernel.rb:35:in `require'
-  2. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-4.12.3/lib/nanoc/filters/relativize_paths.rb:117:in `parser_for'
-  3. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-4.12.3/lib/nanoc/filters/relativize_paths.rb:105:in `relativize_html_like'
-  4. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-4.12.3/lib/nanoc/filters/relativize_paths.rb:58:in `run'
-  5. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/filter.rb:188:in `setup_and_run'
-  6. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/executor.rb:22:in `filter'
-  7. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/recalculate.rb:32:in `block in run'
-  8. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/action_sequence.rb:49:in `block in each'
-  9. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/action_sequence.rb:49:in `each'
-  10. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/action_sequence.rb:49:in `each'
-  11. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/recalculate.rb:29:in `run'
-  12. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
-  13. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
-  14. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/cache.rb:28:in `run'
-  15. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
-  16. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
-  17. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/resume.rb:14:in `block in run'
+  0. /home/leo/.rvm/gems/ruby-2.6.5/gems/bundler-2.2.1/lib/bundler/definition.rb:505:in `validate_ruby!'
+  1. /home/leo/.rvm/gems/ruby-2.6.5/gems/bundler-2.2.1/lib/bundler/definition.rb:480:in `validate_runtime!'
+  2. /home/leo/.rvm/gems/ruby-2.6.5/gems/bundler-2.2.1/lib/bundler.rb:143:in `setup'
+  3. /home/leo/.rvm/gems/ruby-2.6.5/gems/bundler-2.2.1/lib/bundler.rb:174:in `require'
+  4. /home/leo/.rvm/gems/ruby-2.6.5/gems/nanoc-4.11.12/lib/nanoc/cli.rb:129:in `setup_commands'
+  5. /home/leo/.rvm/gems/ruby-2.6.5/gems/nanoc-4.11.12/lib/nanoc/cli.rb:95:in `setup'
+  6. /home/leo/.rvm/gems/ruby-2.6.5/gems/nanoc-4.11.12/lib/nanoc/cli.rb:63:in `block in run'
+  7. /home/leo/.rvm/gems/ruby-2.6.5/gems/nanoc-4.11.12/lib/nanoc/cli/error_handler.rb:15:in `block in handle_while'
+  8. /home/leo/.rvm/gems/ruby-2.6.5/gems/nanoc-4.11.12/lib/nanoc/cli/error_handler.rb:57:in `handle_while'
+  9. /home/leo/.rvm/gems/ruby-2.6.5/gems/nanoc-4.11.12/lib/nanoc/cli/error_handler.rb:15:in `handle_while'
+  10. /home/leo/.rvm/gems/ruby-2.6.5/gems/nanoc-4.11.12/lib/nanoc/cli.rb:62:in `run'
+  11. /home/leo/.rvm/gems/ruby-2.6.5/gems/nanoc-4.11.12/bin/nanoc:18:in `<top (required)>'
+  12. /home/leo/.rvm/gems/ruby-2.6.5/bin/nanoc:23:in `load'
+  13. /home/leo/.rvm/gems/ruby-2.6.5/bin/nanoc:23:in `<main>'
+  14. /home/leo/.rvm/gems/ruby-2.6.5/bin/ruby_executable_hooks:24:in `eval'
 
 ===== VERSION INFORMATION:
 
-Nanoc 4.12.3 © 2007–2021 Denis Defreyne.
-Running ruby 2.7.4 (2021-07-07) on x86_64-linux with RubyGems 3.1.6.
+Nanoc 4.11.12 © 2007–2019 Denis Defreyne.
+Running ruby 2.6.5 (2019-10-01) on x86_64-linux with RubyGems 3.0.6.
 
 ===== SYSTEM INFORMATION:
 
@@ -43,56 +33,191 @@ Linux leo-msi 5.4.0-91-generic #102-Ubuntu SMP Fri Nov 5 16:31:28 UTC 2021 x86_6
 
 ===== INSTALLED GEMS:
 
-  activesupport 7.0.0
-  addressable 2.8.0
+  actioncable 5.2.4, 5.2.4.3, 6.0.3.2, 6.0.4.1
+  actionmailbox 6.0.3.2, 6.0.4.1
+  actionmailer 5.2.4, 5.2.4.3, 6.0.3.2, 6.0.4.1
+  actionpack 5.2.4, 5.2.4.3, 6.0.3.2, 6.0.4.1
+  actiontext 6.0.3.2, 6.0.4.1
+  actionview 5.2.4, 5.2.4.3, 6.0.3.2, 6.0.4.1
+  activejob 5.2.4, 5.2.4.3, 6.0.3.2, 6.0.4.1
+  activemodel 5.2.4, 5.2.4.3, 6.0.3.2, 6.0.4.1
+  activerecord 5.2.4, 5.2.4.3, 6.0.3.2, 6.0.4.1
+  activestorage 5.2.4, 5.2.4.3, 6.0.3.2, 6.0.4.1
+  activesupport 5.2.4, 5.2.4.3, 6.0.0, 6.0.3.2, 6.0.4.1
+  addressable 2.6.0, 2.7.0, 2.8.0
   adsf 1.4.2
+  arel 9.0.0
   awesome_print 1.8.0
-  bundler 2.1.4
-  byebug 11.0.1
-  coderay 1.1.3
+  bigdecimal 1.4.1
+  bindex 0.8.1
+  blazer 2.2.5
+  bootsnap 1.4.6, 1.7.7
+  builder 3.2.4
+  bundler 1.17.3, 2.1.4, 2.2.1
+  bundler-unload 1.0.2
+  byebug 11.0.1, 11.1.3
+  capybara 3.33.0, 3.35.3
+  chartkick 3.3.1
+  childprocess 3.0.0
+  cmath 1.0.0
+  coderay 1.1.2
+  coffee-rails 4.2.2
+  coffee-script 2.4.1
+  coffee-script-source 1.12.2
   colored 1.2
-  concurrent-ruby 1.1.9
-  cri 2.15.11
+  concurrent-ruby 1.1.5, 1.1.6, 1.1.9
+  crass 1.0.6
+  cri 2.15.9
+  csv 3.0.9
+  date 2.0.0
   ddmemoize 1.0.0
   ddmetrics 1.0.1
-  ddplugin 1.0.3
-  diff-lcs 1.4.4
-  ffi 1.15.4
-  formatador 0.3.0
-  guard 2.18.0
+  ddplugin 1.0.2
+  did_you_mean 1.3.0
+  diff-lcs 1.3
+  dotenv 2.7.5
+  dotenv-rails 2.7.5
+  e2mmap 0.1.0
+  equatable 0.6.1
+  errbase 0.2.0
+  erubi 1.9.0, 1.10.0
+  etc 1.0.1
+  execjs 2.7.0
+  executable-hooks 1.6.0
+  fcntl 1.0.0
+  ffi 1.11.1, 1.13.1, 1.15.3
+  fiddle 1.0.0
+  fileutils 1.1.0
+  formatador 0.2.5
+  forwardable 1.2.0
+  gdbm 2.0.0
+  gem-wrappers 1.4.0
+  geocoder 1.6.3
+  globalid 0.4.2, 0.5.2
+  guard 2.15.0, 2.15.1
   guard-compat 1.2.1
-  guard-nanoc 2.1.9
+  guard-nanoc 2.1.6
   hamster 3.0.0
-  i18n 1.8.2
-  json_schema 0.21.0
-  listen 3.7.0
-  lumberjack 1.2.8
-  method_source 1.0.0
-  minitest 5.15.0
-  nanoc 4.12.3
-  nanoc-checking 1.0.1
-  nanoc-cli 4.12.3
-  nanoc-core 4.12.3
-  nanoc-deploying 1.0.1
+  i18n 1.8.2, 1.8.3, 1.8.10
+  io-console 0.4.7
+  ipaddr 1.2.2
+  irb 1.0.0
+  jbuilder 2.10.0, 2.11.2
+  json 2.1.0
+  json_schema 0.20.7, 0.20.8
+  kramdown 2.1.0
+  listen 3.1.5, 3.2.1, 3.7.0
+  logger 1.3.0
+  loofah 2.6.0, 2.12.0
+  lumberjack 1.0.13
+  mail 2.7.1
+  marcel 0.3.3, 1.0.1
+  matrix 0.1.0
+  method_source 0.9.2, 1.0.0
+  mimemagic 0.3.5
+  mini_mime 1.0.2, 1.1.1
+  mini_portile2 2.4.0
+  minitest 5.11.3, 5.14.0, 5.14.1, 5.14.4
+  msgpack 1.3.3, 1.4.2
+  mustermann 1.1.1
+  mutex_m 0.1.0
+  n_gram 0.0.1
+  nanoc 4.11.7, 4.11.12
+  nanoc-core 4.11.7, 4.11.12
+  necromancer 0.5.0
   nenv 0.3.0
+  net-telnet 0.2.0
+  nio4r 2.5.2, 2.5.8
+  nokogiri 1.10.4, 1.10.7, 1.10.8, 1.10.9, 1.12.3, 1.12.5
+  nokogumbo 2.0.1
   notiffany 0.1.3
-  parallel 1.21.0
-  pastel 0.8.0
-  pry 0.14.1
-  public_suffix 4.0.6
-  rack 2.2.3
-  rb-fsevent 0.11.0
-  rb-inotify 0.10.1
+  openssl 2.1.2
+  ostruct 0.1.0
+  parallel 1.17.0
+  pastel 0.7.3
+  pg 1.2.3
+  power_assert 1.1.3
+  prime 0.1.0
+  pry 0.12.2
+  psych 3.1.0
+  public_suffix 3.1.1, 4.0.1, 4.0.5, 4.0.6
+  puma 3.12.6, 4.3.5, 4.3.8
+  racc 1.5.2, 1.6.0
+  rack 2.0.7, 2.1.1, 2.2.3
+  rack-protection 2.0.8.1
+  rack-proxy 0.6.5, 0.7.0
+  rack-test 1.1.0
+  rails 5.2.4, 5.2.4.3, 6.0.3.2, 6.0.4.1
+  rails-dom-testing 2.0.3
+  rails-html-sanitizer 1.3.0, 1.4.2
+  railties 5.2.4, 5.2.4.3, 6.0.3.2, 6.0.4.1
+  rake 12.3.2, 13.0.1, 13.0.3, 13.0.6
+  rb-fsevent 0.10.3, 0.10.4, 0.11.0
+  rb-inotify 0.10.0, 0.10.1
+  rdoc 6.1.2
   ref 2.0.0
+  regexp_parser 1.7.1, 2.1.1
+  rexml 3.1.9
+  rouge 3.11.0
+  rss 0.2.7
+  ruby2_keywords 0.0.2
+  ruby_dep 1.5.0
+  rubygems-bundler 1.4.5
+  rubyzip 2.3.0, 2.3.2
+  rvm 1.11.3.9
+  safely_block 0.3.0
+  sass 3.7.4
+  sass-listen 4.0.0
+  sass-rails 5.1.0, 6.0.0
+  sassc 2.4.0
+  sassc-rails 2.1.2
+  scanf 1.0.0
+  sdbm 1.0.0
+  selenium-webdriver 3.142.7
+  shell 0.7
   shellany 0.0.1
+  sinatra 2.0.8.1
   slow_enumerator_tools 1.1.0
-  thor 1.1.0
-  tty-color 0.6.0
-  tty-command 0.10.1
-  tty-platform 0.3.0
-  tty-which 0.5.0
-  tzinfo 2.0.4
-  zeitwerk 2.5.1
+  spring 2.1.0, 2.1.1
+  spring-watcher-listen 2.0.1
+  sprockets 3.7.2, 4.0.2
+  sprockets-rails 3.2.1, 3.2.2
+  sqlite3 1.4.2
+  stringio 0.0.2
+  strscan 1.0.0
+  sync 0.5.0
+  test-unit 3.2.9
+  thor 0.20.3, 1.0.1, 1.1.0
+  thread_safe 0.3.6
+  thwait 0.1.0
+  tilt 2.0.10
+  tomlrb 1.2.8
+  tracer 0.1.0
+  tty-color 0.5.0
+  tty-command 0.8.2
+  tty-cursor 0.7.0
+  tty-file 0.8.0
+  tty-platform 0.2.1
+  tty-prompt 0.19.0
+  tty-reader 0.6.0
+  tty-screen 0.7.0
+  tty-which 0.4.1
+  turbolinks 5.2.1
+  turbolinks-source 5.2.0
+  tzinfo 1.2.6, 1.2.7, 1.2.9
+  tzinfo-data 1.2020.1
+  uglifier 4.2.0
+  web-console 3.7.0, 4.0.3, 4.1.0
+  webdrivers 4.4.1, 4.6.1
+  webpacker 4.2.2, 4.3.0
+  webrick 1.4.2
+  websocket-driver 0.7.2, 0.7.5
+  websocket-extensions 0.1.5
+  wisper 2.0.0
+  xmlrpc 0.3.0
+  xpath 3.2.0
+  zeitwerk 2.1.9, 2.1.10, 2.3.0, 2.3.1, 2.4.2
+  zlib 1.0.0
 
 ===== GEMFILE.LOCK:
 
@@ -229,64 +354,42 @@ BUNDLED WITH
 
 ===== LOAD PATHS:
 
-  0. /home/leo/.rvm/gems/ruby-2.7.4/gems/ref-2.0.0/lib
-  1. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-4.12.3/lib
-  2. /home/leo/.rvm/gems/ruby-2.7.4/gems/tty-which-0.5.0/lib
-  3. /home/leo/.rvm/gems/ruby-2.7.4/gems/tty-command-0.10.1/lib
-  4. /home/leo/.rvm/gems/ruby-2.7.4/gems/pastel-0.8.0/lib
-  5. /home/leo/.rvm/gems/ruby-2.7.4/gems/tty-color-0.6.0/lib
-  6. /home/leo/.rvm/gems/ruby-2.7.4/gems/parallel-1.21.0/lib
-  7. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-deploying-1.0.1/lib
-  8. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-checking-1.0.1/lib
-  9. /home/leo/.rvm/gems/ruby-2.7.4/gems/guard-nanoc-2.1.9/lib
-  10. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-cli-4.12.3/lib
-  11. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib
-  12. /home/leo/.rvm/gems/ruby-2.7.4/gems/zeitwerk-2.5.1/lib
-  13. /home/leo/.rvm/gems/ruby-2.7.4/gems/tty-platform-0.3.0/lib
-  14. /home/leo/.rvm/gems/ruby-2.7.4/gems/slow_enumerator_tools-1.1.0/lib
-  15. /home/leo/.rvm/gems/ruby-2.7.4/gems/json_schema-0.21.0/lib
-  16. /home/leo/.rvm/gems/ruby-2.7.4/gems/hamster-3.0.0/lib
-  17. /home/leo/.rvm/gems/ruby-2.7.4/gems/guard-compat-1.2.1/lib
-  18. /home/leo/.rvm/gems/ruby-2.7.4/gems/guard-2.18.0/lib
-  19. /home/leo/.rvm/gems/ruby-2.7.4/gems/thor-1.1.0/lib
-  20. /home/leo/.rvm/gems/ruby-2.7.4/gems/pry-0.14.1/lib
-  21. /home/leo/.rvm/gems/ruby-2.7.4/gems/method_source-1.0.0/lib
-  22. /home/leo/.rvm/gems/ruby-2.7.4/gems/notiffany-0.1.3/lib
-  23. /home/leo/.rvm/gems/ruby-2.7.4/gems/shellany-0.0.1/lib
-  24. /home/leo/.rvm/gems/ruby-2.7.4/gems/nenv-0.3.0/lib
-  25. /home/leo/.rvm/gems/ruby-2.7.4/gems/lumberjack-1.2.8/lib
-  26. /home/leo/.rvm/gems/ruby-2.7.4/gems/listen-3.7.0/lib
-  27. /home/leo/.rvm/gems/ruby-2.7.4/gems/rb-inotify-0.10.1/lib
-  28. /home/leo/.rvm/gems/ruby-2.7.4/gems/rb-fsevent-0.11.0/lib
-  29. /home/leo/.rvm/gems/ruby-2.7.4/gems/formatador-0.3.0/lib
-  30. /home/leo/.rvm/gems/ruby-2.7.4/gems/ffi-1.15.4/lib
-  31. /home/leo/.rvm/gems/ruby-2.7.4/extensions/x86_64-linux/2.7.0/ffi-1.15.4
-  32. /home/leo/.rvm/gems/ruby-2.7.4/gems/diff-lcs-1.4.4/lib
-  33. /home/leo/.rvm/gems/ruby-2.7.4/gems/ddplugin-1.0.3/lib
-  34. /home/leo/.rvm/gems/ruby-2.7.4/gems/ddmemoize-1.0.0/lib
-  35. /home/leo/.rvm/gems/ruby-2.7.4/gems/ref-2.0.0/lib
-  36. /home/leo/.rvm/gems/ruby-2.7.4/gems/ddmetrics-1.0.1/lib
-  37. /home/leo/.rvm/gems/ruby-2.7.4/gems/cri-2.15.11/lib
-  38. /home/leo/.rvm/gems/ruby-2.7.4/gems/colored-1.2/lib
-  39. /home/leo/.rvm/gems/ruby-2.7.4/gems/coderay-1.1.3/lib
-  40. /home/leo/.rvm/gems/ruby-2.7.4/gems/byebug-11.0.1/lib
-  41. /home/leo/.rvm/gems/ruby-2.7.4/extensions/x86_64-linux/2.7.0/byebug-11.0.1
-  42. /home/leo/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/lib
-  43. /home/leo/.rvm/gems/ruby-2.7.4/gems/awesome_print-1.8.0/lib
-  44. /home/leo/.rvm/gems/ruby-2.7.4/gems/adsf-1.4.2/lib
-  45. /home/leo/.rvm/gems/ruby-2.7.4/gems/rack-2.2.3/lib
-  46. /home/leo/.rvm/gems/ruby-2.7.4/gems/addressable-2.8.0/lib
-  47. /home/leo/.rvm/gems/ruby-2.7.4/gems/public_suffix-4.0.6/lib
-  48. /home/leo/.rvm/gems/ruby-2.7.4/gems/activesupport-7.0.0/lib
-  49. /home/leo/.rvm/gems/ruby-2.7.4/gems/tzinfo-2.0.4/lib
-  50. /home/leo/.rvm/gems/ruby-2.7.4/gems/minitest-5.15.0/lib
-  51. /home/leo/.rvm/gems/ruby-2.7.4/gems/i18n-1.8.2/lib
-  52. /home/leo/.rvm/gems/ruby-2.7.4/gems/concurrent-ruby-1.1.9/lib/concurrent-ruby
-  53. /home/leo/.rvm/rubies/ruby-2.7.4/lib/ruby/site_ruby/2.7.0
-  54. /home/leo/.rvm/rubies/ruby-2.7.4/lib/ruby/site_ruby/2.7.0/x86_64-linux
-  55. /home/leo/.rvm/rubies/ruby-2.7.4/lib/ruby/site_ruby
-  56. /home/leo/.rvm/rubies/ruby-2.7.4/lib/ruby/vendor_ruby/2.7.0
-  57. /home/leo/.rvm/rubies/ruby-2.7.4/lib/ruby/vendor_ruby/2.7.0/x86_64-linux
-  58. /home/leo/.rvm/rubies/ruby-2.7.4/lib/ruby/vendor_ruby
-  59. /home/leo/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0
-  60. /home/leo/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/x86_64-linux
+  0. /home/leo/.rvm/gems/ruby-2.6.5/gems/ref-2.0.0/lib
+  1. /home/leo/.rvm/rubies/ruby-2.6.5/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib
+  2. /home/leo/.rvm/rubies/ruby-2.6.5/lib/ruby/gems/2.6.0/gems/executable-hooks-1.6.0/lib
+  3. /home/leo/.rvm/rubies/ruby-2.6.5/lib/ruby/gems/2.6.0/extensions/x86_64-linux/2.6.0/executable-hooks-1.6.0
+  4. /home/leo/.rvm/rubies/ruby-2.6.5/lib/ruby/gems/2.6.0/gems/bundler-unload-1.0.2/lib
+  5. /home/leo/.rvm/rubies/ruby-2.6.5/lib/ruby/gems/2.6.0/gems/rubygems-bundler-1.4.5/lib
+  6. /home/leo/.rvm/gems/ruby-2.6.5/gems/bundler-2.2.1/lib
+  7. /home/leo/.rvm/gems/ruby-2.6.5/gems/colored-1.2/lib
+  8. /home/leo/.rvm/gems/ruby-2.6.5/gems/cri-2.15.9/lib
+  9. /home/leo/.rvm/gems/ruby-2.6.5/gems/diff-lcs-1.3/lib
+  10. /home/leo/.rvm/gems/ruby-2.6.5/gems/ddmetrics-1.0.1/lib
+  11. /home/leo/.rvm/gems/ruby-2.6.5/gems/ref-2.0.0/lib
+  12. /home/leo/.rvm/gems/ruby-2.6.5/gems/ddmemoize-1.0.0/lib
+  13. /home/leo/.rvm/gems/ruby-2.6.5/gems/ddplugin-1.0.2/lib
+  14. /home/leo/.rvm/gems/ruby-2.6.5/gems/hamster-3.0.0/lib
+  15. /home/leo/.rvm/gems/ruby-2.6.5/gems/slow_enumerator_tools-1.1.0/lib
+  16. /home/leo/.rvm/gems/ruby-2.6.5/gems/nanoc-core-4.11.12/lib
+  17. /home/leo/.rvm/gems/ruby-2.6.5/gems/parallel-1.17.0/lib
+  18. /home/leo/.rvm/gems/ruby-2.6.5/gems/tomlrb-1.2.8/lib
+  19. /home/leo/.rvm/gems/ruby-2.6.5/gems/equatable-0.6.1/lib
+  20. /home/leo/.rvm/gems/ruby-2.6.5/gems/tty-color-0.5.0/lib
+  21. /home/leo/.rvm/gems/ruby-2.6.5/gems/pastel-0.7.3/lib
+  22. /home/leo/.rvm/gems/ruby-2.6.5/gems/tty-command-0.8.2/lib
+  23. /home/leo/.rvm/gems/ruby-2.6.5/gems/tty-platform-0.2.1/lib
+  24. /home/leo/.rvm/gems/ruby-2.6.5/gems/tty-which-0.4.1/lib
+  25. /home/leo/.rvm/gems/ruby-2.6.5/gems/nanoc-4.11.12/lib
+  26. /home/leo/.rvm/gems/ruby-2.6.5/gems/public_suffix-4.0.6/lib
+  27. /home/leo/.rvm/gems/ruby-2.6.5/gems/addressable-2.8.0/lib
+  28. /home/leo/.rvm/gems/ruby-2.6.5/gems/concurrent-ruby-1.1.9/lib/concurrent-ruby
+  29. /home/leo/.rvm/gems/ruby-2.6.5/gems/json_schema-0.20.8/lib
+  30. /home/leo/.rvm/gems/ruby-2.6.5/gems/zeitwerk-2.4.2/lib
+  31. /home/leo/.rvm/rubies/ruby-2.6.5/lib/ruby/site_ruby/2.6.0
+  32. /home/leo/.rvm/rubies/ruby-2.6.5/lib/ruby/site_ruby/2.6.0/x86_64-linux
+  33. /home/leo/.rvm/rubies/ruby-2.6.5/lib/ruby/site_ruby
+  34. /home/leo/.rvm/rubies/ruby-2.6.5/lib/ruby/vendor_ruby/2.6.0
+  35. /home/leo/.rvm/rubies/ruby-2.6.5/lib/ruby/vendor_ruby/2.6.0/x86_64-linux
+  36. /home/leo/.rvm/rubies/ruby-2.6.5/lib/ruby/vendor_ruby
+  37. /home/leo/.rvm/rubies/ruby-2.6.5/lib/ruby/2.6.0
+  38. /home/leo/.rvm/rubies/ruby-2.6.5/lib/ruby/2.6.0/x86_64-linux
