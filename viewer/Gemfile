@@ -4,6 +4,7 @@ source 'https://rubygems.org' do
   gem 'nanoc'
 
   group :development do
+    gem 'nokogiri'
     gem 'adsf'
     gem 'guard'
     gem 'byebug'
