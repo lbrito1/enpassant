@@ -30,6 +30,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #A64253;
 }
 
 @media (min-width:1000px) {
