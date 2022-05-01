@@ -15,6 +15,11 @@ git checkout development
 
 echo ">>>> Calling nanoc..."
 bundle install
+
+echo "---
+id: $(date +'%Y')
+---" > "content/year/$(date +'%Y').html"
+
 nanoc
 
 cd -

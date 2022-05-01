@@ -28,7 +28,7 @@ def recommendations_by_year
 end
 
 def recommendations_by_month(year)
-  recommendations_by_year[year.to_s].sort_by(&:month).group_by(&:month)
+  recommendations_by_year[year.to_s].sort_by(&:month).reverse.group_by(&:month)
 end
 
 def categories

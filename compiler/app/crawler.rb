@@ -34,8 +34,7 @@ class Crawler
 
     log("Done, wrote #{bytes} bytes.")
   rescue StandardError => e
-    byebug
-    log("Something went wrong!")
+    log("Something went wrong! #{e.inspect}")
   end
 
   private
