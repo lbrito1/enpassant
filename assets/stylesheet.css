@@ -147,7 +147,7 @@ a.disabled {
 }
 
 .filters {
-  text-align: center;
+  text-align: left;
   margin: 5px 5px;
 }
 
@@ -156,7 +156,7 @@ a.disabled {
 }
 
 .recommendation-wrapper {
-  background-color: #f9f9f9;
+  background-color: #f3f3f3;
   display: flex;
   align-items: center;
   font-size: 110%;
@@ -218,7 +218,7 @@ a.disabled {
 }
 
 .recommendation-episode {
-  opacity: 30%;
+  opacity: 80%;
   font-size: 80%;
 }
 
