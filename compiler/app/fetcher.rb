@@ -65,7 +65,7 @@ class Fetcher
 
   def get(url)
     sleep(THROTTLE_MS / 1_000.0)
-    Nokogiri::HTML(open(url))
+    Nokogiri::HTML(URI.open(url))
   end
 end
 
