@@ -17,5 +17,15 @@ module Category
     def normalized_categories
       CATEGORIES.map { |cat| normalize(cat) }.uniq
     end
+
+    def icon_name(category)
+      norm = Category::normalize(category)
+      return 'film' if norm == 'filme'
+      return 'tv' if norm == 'série'
+      return 'music' if norm == 'música'
+      return 'book' if norm == 'livro'
+      return 'file-text' if norm == 'text'
+      'package'
+    end
   end
 end

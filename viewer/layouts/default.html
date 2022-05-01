@@ -16,7 +16,7 @@
   </head>
   <body>
     <div id="header">
-      <h1 class="title">En Passant</h1>
+      <h1 class="title"><%= link_to("En Passant", "/") %></h1>
       <h4 class="subtitle">Um compilador de recomendações do <a href="https://xadrezverbal.com/">Xadrez Verbal</a></h4>
       <div class="strong"><a href="https://github.com/lbrito1">Autor</a> |
       <a href="https://github.com/lbrito1/enpassant">Código</a>
@@ -35,8 +35,11 @@
       <h2>Tipos</h2>
       <ul class="filters">
         <% categories.each.with_index do |category, i| %>
+            <span class="recommendation-img">
+              <img class="recommendation-icon-img" src="assets/icons/<%= Category.icon_name(category) %>.svg"/>
+            </span>
           <%= link_to(category, "/#{I18n.transliterate(category)}.html") %>
-          <% if i < categories.count - 1 %> &#183; <% end %>
+          <br>
         <% end.join("&#183;") %>
       </ul>
     </div>
