@@ -43,6 +43,11 @@ class Recommendation
     Category.icon_name(category)
   end
 
+  # TODO move to presenter
+  def color_name
+    Category.color_name(category)
+  end
+
   private
 
   def base_category

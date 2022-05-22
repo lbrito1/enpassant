@@ -1,7 +1,6 @@
 
 <% render('/default.*') do %>
   <h1><%= name.capitalize.pluralize %></h1>
-
   <% render('/recommendation_index.*', recommendations: recommendations_by_category[name]) do %>
     <%= yield %>
   <% end %>
