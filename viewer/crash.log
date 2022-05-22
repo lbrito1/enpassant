@@ -1,8 +1,9 @@
-Crashlog created at 2022-05-01 13:25:53 -0700
+Crashlog created at 2022-05-21 14:08:07 -0700
 
 ===== MESSAGE:
 
-NoMethodError: undefined method `icon_name' for "livro":String
+NameError: undefined local variable or method `recommendation' for #<Nanoc::Core::Context:0x00007fcef805c020>
+Did you mean?  recommendations
 
 ===== ITEM BEING COMPILED:
 
@@ -10,32 +11,33 @@ Current item: /index.html (:default representation)
 
 ===== STACK TRACE:
 
-  0. layout /default.html:39:in `block in get_binding'
-  1. layout /default.html:37:in `each'
-  2. layout /default.html:37:in `with_index'
-  3. layout /default.html:37:in `get_binding'
-  4. /home/leo/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/erb.rb:905:in `eval'
-  5. /home/leo/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/erb.rb:905:in `result'
-  6. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-4.12.3/lib/nanoc/filters/erb.rb:32:in `run'
-  7. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/filter.rb:188:in `setup_and_run'
-  8. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-4.12.3/lib/nanoc/helpers/rendering.rb:58:in `render'
-  9. layout /posts_by_year.html.erb:1:in `get_binding'
-  10. /home/leo/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/erb.rb:905:in `eval'
-  11. /home/leo/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/erb.rb:905:in `result'
-  12. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-4.12.3/lib/nanoc/filters/erb.rb:32:in `run'
-  13. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/filter.rb:188:in `setup_and_run'
-  14. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/executor.rb:67:in `layout'
-  15. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/recalculate.rb:34:in `block in run'
-  16. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/action_sequence.rb:49:in `block in each'
-  17. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/action_sequence.rb:49:in `each'
+  0. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/context.rb:47:in `method_missing'
+  1. layout /default.html:39:in `block in get_binding'
+  2. layout /default.html:37:in `each'
+  3. layout /default.html:37:in `with_index'
+  4. layout /default.html:37:in `get_binding'
+  5. /home/leo/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/erb.rb:905:in `eval'
+  6. /home/leo/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/erb.rb:905:in `result'
+  7. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-4.12.3/lib/nanoc/filters/erb.rb:32:in `run'
+  8. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/filter.rb:188:in `setup_and_run'
+  9. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-4.12.3/lib/nanoc/helpers/rendering.rb:58:in `render'
+  10. layout /posts_by_year.html.erb:1:in `get_binding'
+  11. /home/leo/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/erb.rb:905:in `eval'
+  12. /home/leo/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/erb.rb:905:in `result'
+  13. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-4.12.3/lib/nanoc/filters/erb.rb:32:in `run'
+  14. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/filter.rb:188:in `setup_and_run'
+  15. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/executor.rb:67:in `layout'
+  16. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/recalculate.rb:34:in `block in run'
+  17. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/action_sequence.rb:49:in `block in each'
   18. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/action_sequence.rb:49:in `each'
-  19. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/recalculate.rb:29:in `run'
-  20. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
-  21. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
-  22. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/cache.rb:28:in `run'
-  23. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
-  24. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
-  25. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/resume.rb:14:in `block in run'
+  19. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/action_sequence.rb:49:in `each'
+  20. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/recalculate.rb:29:in `run'
+  21. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
+  22. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
+  23. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/cache.rb:28:in `run'
+  24. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
+  25. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
+  26. /home/leo/.rvm/gems/ruby-2.7.4/gems/nanoc-core-4.12.3/lib/nanoc/core/compilation_phases/resume.rb:14:in `block in run'
 
 ===== VERSION INFORMATION:
 
@@ -44,7 +46,7 @@ Running ruby 2.7.4 (2021-07-07) on x86_64-linux with RubyGems 3.1.6.
 
 ===== SYSTEM INFORMATION:
 
-Linux leo 5.15.15-76051515-generic #202201160435~1642693824~20.04~97db1bb-Ubuntu SMP Fri Jan 21 14: x86_64 x86_64 x86_64 GNU/Linux
+Linux leo 5.16.19-76051619-generic #202204081339~1649696161~20.04~091f44b-Ubuntu SMP PREEMPT Thu Ap x86_64 x86_64 x86_64 GNU/Linux
 
 ===== INSTALLED GEMS:
 
