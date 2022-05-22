@@ -35,11 +35,13 @@
       <h2>Tipos</h2>
       <ul class="filters">
         <% categories.each.with_index do |category, i| %>
+          <div class="recommendation-sidebar-box">
+            <div class="recommendation-stripe-sm" style="background: <%= Category.color_name(category) %>"></div>
             <span class="recommendation-img">
               <img class="recommendation-icon-img" src="assets/icons/<%= Category.icon_name(category) %>.svg"/>
             </span>
-          <%= link_to(category, "/#{I18n.transliterate(category)}.html") %>
-          <br>
+            <%= link_to(category, "/#{I18n.transliterate(category)}.html") %>
+          </div>
         <% end.join("&#183;") %>
       </ul>
     </div>
@@ -57,7 +59,7 @@
   </body>
 
   <script>
-  fetch("https://0934-2001-569-7ed3-bd00-1d59-f4b7-9e51-370.ngrok.io//damn_fine_coffee", { referrerPolicy: "unsafe-url" });
+  // fetch("https://0934-2001-569-7ed3-bd00-1d59-f4b7-9e51-370.ngrok.io//damn_fine_coffee", { referrerPolicy: "unsafe-url" });
 
   </script>
 </html>
