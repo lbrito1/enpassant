@@ -2,7 +2,7 @@
 
 # Crawls through their site, creates/updates JSON store
 TIMESTAMP=$(date +"[%Y-%m-%d %H:%M:%S]")
-echo $(TIMESTAMP)
+echo $TIMESTAMP
 echo ">>>> Crawling site..."
 cd compiler
 bundle install
@@ -67,5 +67,5 @@ echo ">>>> Checking out development branch..."
 git checkout development
 
 TIMESTAMP=$(date +"[%Y-%m-%d %H:%M:%S]")
-echo $(TIMESTAMP)
+echo $TIMESTAMP
 echo ">>>> Done!"
