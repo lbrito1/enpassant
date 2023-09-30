@@ -1,0 +1,317 @@
+[2023-09-30 15:16:01]
+/home/leo/.ssh/ssh_auth_sock
+>>>> Crawling site...
+/home/leo/work/enpassant/bin/deploy.sh: line 13: bundle: command not found
+/home/leo/work/enpassant
+/home/leo/work/enpassant/bin/deploy.sh: line 15: ruby: command not found
+>>>> Switching to development branch...
+Already on 'development'
+Your branch is up to date with 'origin/development'.
+>>>> Calling nanoc...
+/home/leo/work/enpassant/bin/deploy.sh: line 23: bundle: command not found
+/home/leo/work/enpassant/bin/deploy.sh: line 29: nanoc: command not found
+/home/leo/work/enpassant
+>>>> Adding files with git add...
+>>>> Commiting...
+On branch development
+Your branch is up to date with 'origin/development'.
+
+nothing to commit, working tree clean
+>>>> Pushing to development branch...
+Everything up-to-date
+>>>> Switching to master (github.io) branch...
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+>>>> Copying output files from development branch...
+error: pathspec 'viewer/output/' did not match any file(s) known to git
+>>>> Cleaning assets...
+>>>> Moving files to root dir...
+mv: cannot stat 'viewer/output/*': No such file or directory
+>>>> Cleaning up output folder...
+Unstaged changes after reset:
+D	assets/icons/activity.svg
+D	assets/icons/airplay.svg
+D	assets/icons/alert-circle.svg
+D	assets/icons/alert-octagon.svg
+D	assets/icons/alert-triangle.svg
+D	assets/icons/align-center.svg
+D	assets/icons/align-justify.svg
+D	assets/icons/align-left.svg
+D	assets/icons/align-right.svg
+D	assets/icons/anchor.svg
+D	assets/icons/aperture.svg
+D	assets/icons/archive.svg
+D	assets/icons/arrow-down-circle.svg
+D	assets/icons/arrow-down-left.svg
+D	assets/icons/arrow-down-right.svg
+D	assets/icons/arrow-down.svg
+D	assets/icons/arrow-left-circle.svg
+D	assets/icons/arrow-left.svg
+D	assets/icons/arrow-right-circle.svg
+D	assets/icons/arrow-right.svg
+D	assets/icons/arrow-up-circle.svg
+D	assets/icons/arrow-up-left.svg
+D	assets/icons/arrow-up-right.svg
+D	assets/icons/arrow-up.svg
+D	assets/icons/at-sign.svg
+D	assets/icons/award.svg
+D	assets/icons/bar-chart-2.svg
+D	assets/icons/bar-chart.svg
+D	assets/icons/battery-charging.svg
+D	assets/icons/battery.svg
+D	assets/icons/bell-off.svg
+D	assets/icons/bell.svg
+D	assets/icons/bluetooth.svg
+D	assets/icons/bold.svg
+D	assets/icons/book-open.svg
+D	assets/icons/book.svg
+D	assets/icons/bookmark.svg
+D	assets/icons/box.svg
+D	assets/icons/briefcase.svg
+D	assets/icons/calendar.svg
+D	assets/icons/camera-off.svg
+D	assets/icons/camera.svg
+D	assets/icons/cast.svg
+D	assets/icons/check-circle.svg
+D	assets/icons/check-square.svg
+D	assets/icons/check.svg
+D	assets/icons/chevron-down.svg
+D	assets/icons/chevron-left.svg
+D	assets/icons/chevron-right.svg
+D	assets/icons/chevron-up.svg
+D	assets/icons/chevrons-down.svg
+D	assets/icons/chevrons-left.svg
+D	assets/icons/chevrons-right.svg
+D	assets/icons/chevrons-up.svg
+D	assets/icons/chrome.svg
+D	assets/icons/circle.svg
+D	assets/icons/clipboard.svg
+D	assets/icons/clock.svg
+D	assets/icons/cloud-drizzle.svg
+D	assets/icons/cloud-lightning.svg
+D	assets/icons/cloud-off.svg
+D	assets/icons/cloud-rain.svg
+D	assets/icons/cloud-snow.svg
+D	assets/icons/cloud.svg
+D	assets/icons/code.svg
+D	assets/icons/codepen.svg
+D	assets/icons/codesandbox.svg
+D	assets/icons/coffee.svg
+D	assets/icons/columns.svg
+D	assets/icons/command.svg
+D	assets/icons/compass.svg
+D	assets/icons/copy.svg
+D	assets/icons/corner-down-left.svg
+D	assets/icons/corner-down-right.svg
+D	assets/icons/corner-left-down.svg
+D	assets/icons/corner-left-up.svg
+D	assets/icons/corner-right-down.svg
+D	assets/icons/corner-right-up.svg
+D	assets/icons/corner-up-left.svg
+D	assets/icons/corner-up-right.svg
+D	assets/icons/cpu.svg
+D	assets/icons/credit-card.svg
+D	assets/icons/crop.svg
+D	assets/icons/crosshair.svg
+D	assets/icons/database.svg
+D	assets/icons/delete.svg
+D	assets/icons/disc.svg
+D	assets/icons/dollar-sign.svg
+D	assets/icons/download-cloud.svg
+D	assets/icons/download.svg
+D	assets/icons/droplet.svg
+D	assets/icons/edit-2.svg
+D	assets/icons/edit-3.svg
+D	assets/icons/edit.svg
+D	assets/icons/external-link.svg
+D	assets/icons/eye-off.svg
+D	assets/icons/eye.svg
+D	assets/icons/facebook.svg
+D	assets/icons/fast-forward.svg
+D	assets/icons/feather.svg
+D	assets/icons/figma.svg
+D	assets/icons/file-minus.svg
+D	assets/icons/file-plus.svg
+D	assets/icons/file-text.svg
+D	assets/icons/file.svg
+D	assets/icons/film.svg
+D	assets/icons/filter.svg
+D	assets/icons/flag.svg
+D	assets/icons/folder-minus.svg
+D	assets/icons/folder-plus.svg
+D	assets/icons/folder.svg
+D	assets/icons/framer.svg
+D	assets/icons/frown.svg
+D	assets/icons/gift.svg
+D	assets/icons/git-branch.svg
+D	assets/icons/git-commit.svg
+D	assets/icons/git-merge.svg
+D	assets/icons/git-pull-request.svg
+D	assets/icons/github.svg
+D	assets/icons/gitlab.svg
+D	assets/icons/globe.svg
+D	assets/icons/grid.svg
+D	assets/icons/hard-drive.svg
+D	assets/icons/hash.svg
+D	assets/icons/headphones.svg
+D	assets/icons/heart.svg
+D	assets/icons/help-circle.svg
+D	assets/icons/hexagon.svg
+D	assets/icons/home.svg
+D	assets/icons/image.svg
+D	assets/icons/inbox.svg
+D	assets/icons/info.svg
+D	assets/icons/instagram.svg
+D	assets/icons/italic.svg
+D	assets/icons/key.svg
+D	assets/icons/layers.svg
+D	assets/icons/layout.svg
+D	assets/icons/life-buoy.svg
+D	assets/icons/link-2.svg
+D	assets/icons/link.svg
+D	assets/icons/linkedin.svg
+D	assets/icons/list.svg
+D	assets/icons/loader.svg
+D	assets/icons/lock.svg
+D	assets/icons/log-in.svg
+D	assets/icons/log-out.svg
+D	assets/icons/mail.svg
+D	assets/icons/map-pin.svg
+D	assets/icons/map.svg
+D	assets/icons/maximize-2.svg
+D	assets/icons/maximize.svg
+D	assets/icons/meh.svg
+D	assets/icons/menu.svg
+D	assets/icons/message-circle.svg
+D	assets/icons/message-square.svg
+D	assets/icons/mic-off.svg
+D	assets/icons/mic.svg
+D	assets/icons/minimize-2.svg
+D	assets/icons/minimize.svg
+D	assets/icons/minus-circle.svg
+D	assets/icons/minus-square.svg
+D	assets/icons/minus.svg
+D	assets/icons/monitor.svg
+D	assets/icons/moon.svg
+D	assets/icons/more-horizontal.svg
+D	assets/icons/more-vertical.svg
+D	assets/icons/mouse-pointer.svg
+D	assets/icons/move.svg
+D	assets/icons/music.svg
+D	assets/icons/navigation-2.svg
+D	assets/icons/navigation.svg
+D	assets/icons/octagon.svg
+D	assets/icons/package.svg
+D	assets/icons/paperclip.svg
+D	assets/icons/pause-circle.svg
+D	assets/icons/pause.svg
+D	assets/icons/pen-tool.svg
+D	assets/icons/percent.svg
+D	assets/icons/phone-call.svg
+D	assets/icons/phone-forwarded.svg
+D	assets/icons/phone-incoming.svg
+D	assets/icons/phone-missed.svg
+D	assets/icons/phone-off.svg
+D	assets/icons/phone-outgoing.svg
+D	assets/icons/phone.svg
+D	assets/icons/pie-chart.svg
+D	assets/icons/play-circle.svg
+D	assets/icons/play.svg
+D	assets/icons/plus-circle.svg
+D	assets/icons/plus-square.svg
+D	assets/icons/plus.svg
+D	assets/icons/pocket.svg
+D	assets/icons/power.svg
+D	assets/icons/printer.svg
+D	assets/icons/radio.svg
+D	assets/icons/refresh-ccw.svg
+D	assets/icons/refresh-cw.svg
+D	assets/icons/repeat.svg
+D	assets/icons/rewind.svg
+D	assets/icons/rotate-ccw.svg
+D	assets/icons/rotate-cw.svg
+D	assets/icons/rss.svg
+D	assets/icons/save.svg
+D	assets/icons/scissors.svg
+D	assets/icons/search.svg
+D	assets/icons/send.svg
+D	assets/icons/server.svg
+D	assets/icons/settings.svg
+D	assets/icons/share-2.svg
+D	assets/icons/share.svg
+D	assets/icons/shield-off.svg
+D	assets/icons/shield.svg
+D	assets/icons/shopping-bag.svg
+D	assets/icons/shopping-cart.svg
+D	assets/icons/shuffle.svg
+D	assets/icons/sidebar.svg
+D	assets/icons/skip-back.svg
+D	assets/icons/skip-forward.svg
+D	assets/icons/slack.svg
+D	assets/icons/slash.svg
+D	assets/icons/sliders.svg
+D	assets/icons/smartphone.svg
+D	assets/icons/smile.svg
+D	assets/icons/speaker.svg
+D	assets/icons/square.svg
+D	assets/icons/star.svg
+D	assets/icons/stop-circle.svg
+D	assets/icons/sun.svg
+D	assets/icons/sunrise.svg
+D	assets/icons/sunset.svg
+D	assets/icons/tablet.svg
+D	assets/icons/tag.svg
+D	assets/icons/target.svg
+D	assets/icons/terminal.svg
+D	assets/icons/thermometer.svg
+D	assets/icons/thumbs-down.svg
+D	assets/icons/thumbs-up.svg
+D	assets/icons/toggle-left.svg
+D	assets/icons/toggle-right.svg
+D	assets/icons/tool.svg
+D	assets/icons/trash-2.svg
+D	assets/icons/trash.svg
+D	assets/icons/trello.svg
+D	assets/icons/trending-down.svg
+D	assets/icons/trending-up.svg
+D	assets/icons/triangle.svg
+D	assets/icons/truck.svg
+D	assets/icons/tv.svg
+D	assets/icons/twitch.svg
+D	assets/icons/twitter.svg
+D	assets/icons/type.svg
+D	assets/icons/umbrella.svg
+D	assets/icons/underline.svg
+D	assets/icons/unlock.svg
+D	assets/icons/upload-cloud.svg
+D	assets/icons/upload.svg
+D	assets/icons/user-check.svg
+D	assets/icons/user-minus.svg
+D	assets/icons/user-plus.svg
+D	assets/icons/user-x.svg
+D	assets/icons/user.svg
+D	assets/icons/users.svg
+D	assets/icons/video-off.svg
+D	assets/icons/video.svg
+D	assets/icons/voicemail.svg
+D	assets/icons/volume-1.svg
+D	assets/icons/volume-2.svg
+D	assets/icons/volume-x.svg
+D	assets/icons/volume.svg
+D	assets/icons/watch.svg
+D	assets/icons/wifi-off.svg
+D	assets/icons/wifi.svg
+D	assets/icons/wind.svg
+D	assets/icons/x-circle.svg
+D	assets/icons/x-octagon.svg
+D	assets/icons/x-square.svg
+D	assets/icons/x.svg
+D	assets/icons/youtube.svg
+D	assets/icons/zap-off.svg
+D	assets/icons/zap.svg
+D	assets/icons/zoom-in.svg
+D	assets/icons/zoom-out.svg
+D	assets/picnic.min.css
+D	assets/stylesheet.css
+warning: could not open directory 'viewer/output/': No such file or directory
+>>>> Adding update site files with git add...
