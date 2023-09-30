@@ -1,9 +1,14 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # Crawls through their site, creates/updates JSON store
 TIMESTAMP=$(date +"[%Y-%m-%d %H:%M:%S]")
-echo $TIMESTAMP
+echo $(date +"[%Y-%m-%d %H:%M:%S]")
+# echo $(cat $HOME/.ssh_sock)
+export SSH_AUTH_SOCK=$HOME/.ssh/ssh_auth_sock
+echo $SSH_AUTH_SOCK
+
 echo ">>>> Crawling site..."
+cd /home/leo/work/enpassant
 cd compiler
 bundle install
 cd -
@@ -67,5 +72,5 @@ echo ">>>> Checking out development branch..."
 git checkout development
 
 TIMESTAMP=$(date +"[%Y-%m-%d %H:%M:%S]")
-echo $TIMESTAMP
+echo $(date +"[%Y-%m-%d %H:%M:%S]")
 echo ">>>> Done!"
