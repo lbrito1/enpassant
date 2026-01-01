@@ -1,4 +1,4 @@
-Crashlog created at 2025-01-18 00:00:06 -0800
+Crashlog created at 2026-01-01 00:00:09 -0800
 
 ===== MESSAGE:
 
@@ -58,7 +58,7 @@ Running ruby 3.2.2 (2023-03-30) on x86_64-linux with RubyGems 3.4.10.
 
 ===== SYSTEM INFORMATION:
 
-Linux leo-server 6.8.0-51-generic #52~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Dec  9 15:00:52 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+Linux leo-server 6.8.0-87-generic #88~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Oct 14 14:03:14 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
 
 ===== INSTALLED GEMS:
 
